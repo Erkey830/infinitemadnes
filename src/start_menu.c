@@ -580,12 +580,6 @@ static const union AnimCmd sAnimNav[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimQuest[] =
-{
-    ANIMCMD_FRAME(64, 0),
-    ANIMCMD_END,
-};
-
 static const union AnimCmd sAnimCard[] =
 {
     ANIMCMD_FRAME(80, 0),
