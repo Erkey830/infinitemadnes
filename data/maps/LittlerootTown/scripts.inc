@@ -394,6 +394,7 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 
 LittlerootTown_EventScript_TownSign::
 	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
+	setflag FLAG_SYS_QUEST_MENU_GET
 	end
 
 LittlerootTown_EventScript_BirchsLabSign::

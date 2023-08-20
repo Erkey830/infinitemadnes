@@ -592,6 +592,18 @@ static const union AnimCmd sAnimSave[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnimCard[] =
+{
+    ANIMCMD_FRAME(112, 0),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnimSave[] =
+{
+    ANIMCMD_FRAME(128, 0),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnimOption[] =
 {
     ANIMCMD_FRAME(112, 0),
@@ -610,6 +622,7 @@ static const union AnimCmd sAnimRetire[] =
     [MENU_ACTION_POKEMON] = sAnimBall,
     [MENU_ACTION_BAG] = sAnimBag,
     [MENU_ACTION_POKENAV] = sAnimNav,
+    [MENU_ACTION_QUEST_MENU] = sAnimQuest,
     [MENU_ACTION_PLAYER] = sAnimCard,
     [MENU_ACTION_SAVE] = sAnimSave,
     [MENU_ACTION_OPTION] = sAnimOption,
