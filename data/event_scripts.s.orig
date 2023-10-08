@@ -1,3 +1,4 @@
+#include "config.h"
 #include "config/battle.h"
 #include "config/item.h"
 #include "constants/global.h"
@@ -55,11 +56,7 @@
 #include "constants/union_room.h"
 #include "constants/vars.h"
 #include "constants/weather.h"
-<<<<<<< HEAD
 #include "constants/day_night.h"
-=======
-#include "constants/quests.h"
->>>>>>> d3ac2e8d313ac6c993844ec484f6754c2d9e5fa1
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -583,6 +580,7 @@ gStdScripts_End::
 	.include "data/scripts/new_game.inc"
 	.include "data/scripts/hall_of_fame.inc"
 
+	.include "data/scripts/config.inc"
 	.include "data/scripts/debug.inc"
 
 EventScript_WhiteOut::
@@ -728,7 +726,7 @@ Common_EventScript_OutOfCenterPartyHeal::
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty
-  callnative UpdateFollowingPokemon
+	callnative UpdateFollowingPokemon
 	fadescreen FADE_FROM_BLACK
 	return
 
@@ -952,6 +950,10 @@ gText_PlayerFoundOneTMHM::
 	.string "{PLAYER} found one {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 
+gText_PlayerFoundTMHMs::
+	.string "{PLAYER} found {STR_VAR_3} {STR_VAR_1}\n"
+	.string "{STR_VAR_2}!$"
+
 gText_Sudowoodo_Attacked::
 	.string "The weird tree doesn't like the\n"
 	.string "WAILMER PAIL!\p"
@@ -1010,6 +1012,13 @@ Common_EventScript_LegendaryFlewAway::
 	release
 	end
 
+EventScript_VsSeekerChargingDone::
+	special VsSeekerFreezeObjectsAfterChargeComplete
+	waitstate
+	special VsSeekerResetObjectMovementAfterChargeComplete
+	releaseall
+	end
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"
@@ -1062,7 +1071,14 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/scripts/move_tutors.inc"
 	.include "data/scripts/trainer_hill.inc"
 	.include "data/scripts/test_signpost.inc"
-  .include "data/scripts/follower.inc"
+	.include "data/scripts/follower.inc"
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+<<<<<<< HEAD
+    .include "data/scripts/dexnav.inc"
+    
+=======
+
+	.include "data/maps/NewMap1/scripts.inc"
+>>>>>>> 4e5f16e061 (graphics nds style)
