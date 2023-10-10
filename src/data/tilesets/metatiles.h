@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_petalburgnds[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_rustboronds[] = INCBIN_U16("data/tilesets/secondary/rustboronds/metatiles.bin");
 const u16 gMetatileAttributes_rustboronds[] = INCBIN_U16("data/tilesets/secondary/rustboronds/metatile_attributes.bin");
+
+const u16 gMetatiles_battlefrontiersinbugs[] = INCBIN_U16("data/tilesets/primary/battlefrontiersinbugs/metatiles.bin");
+const u16 gMetatileAttributes_battlefrontiersinbugs[] = INCBIN_U16("data/tilesets/primary/battlefrontiersinbugs/metatile_attributes.bin");

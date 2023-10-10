@@ -849,3 +849,14 @@ const struct Tileset gTileset_rustboronds =
     .metatileAttributes = gMetatileAttributes_rustboronds,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_battlefrontiersinbugs =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_battlefrontiersinbugs,
+    .palettes = gTilesetPalettes_battlefrontiersinbugs,
+    .metatiles = gMetatiles_battlefrontiersinbugs,
+    .metatileAttributes = gMetatileAttributes_battlefrontiersinbugs,
+    .callback = NULL,
+};
