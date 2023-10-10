@@ -48,11 +48,11 @@ const struct Tileset gTileset_Slateport =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_Slateport,
-    .palettes = gTilesetPalettes_Slateport,
+   .tiles = gTilesetTiles_Slateport,
+   .palettes = gTilesetPalettes_Slateport,
     .metatiles = gMetatiles_Slateport,
     .metatileAttributes = gMetatileAttributes_Slateport,
-    .callback = InitTilesetAnim_Slateport,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_Mauville =
@@ -825,5 +825,27 @@ const struct Tileset gTileset_UnionRoom =
     .palettes = gTilesetPalettes_UnionRoom,
     .metatiles = gMetatiles_UnionRoom,
     .metatileAttributes = gMetatileAttributes_UnionRoom,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_petalburgnds =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_petalburgnds,
+    .palettes = gTilesetPalettes_petalburgnds,
+    .metatiles = gMetatiles_petalburgnds,
+    .metatileAttributes = gMetatileAttributes_petalburgnds,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_rustboronds =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_rustboronds,
+    .palettes = gTilesetPalettes_rustboronds,
+    .metatiles = gMetatiles_rustboronds,
+    .metatileAttributes = gMetatileAttributes_rustboronds,
     .callback = NULL,
 };

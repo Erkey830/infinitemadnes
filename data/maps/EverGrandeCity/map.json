@@ -19,11 +19,13 @@
       "direction": "left"
     }
   ],
-  "object_events": [],
+  "object_events": [
+
+  ],
   "warp_events": [
     {
       "x": 18,
-      "y": 5,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
       "dest_warp_id": "0"

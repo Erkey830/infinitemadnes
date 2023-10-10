@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_ROUTE103",
-      "offset": 60,
+      "offset": 58,
       "direction": "left"
     }
   ],
@@ -201,7 +201,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
-      "x": 34,
+      "x": 33,
       "y": 40,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
@@ -228,7 +228,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 5,
-      "y": 11,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -241,7 +241,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 6,
-      "y": 11,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -254,7 +254,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 7,
-      "y": 11,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -448,7 +448,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F",
-      "x": 10,
+      "x": 13,
       "y": 39,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -474,8 +474,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 6,
-      "y": 38,
+      "x": 3,
+      "y": 41,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -629,7 +629,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 15,
+      "x": 16,
       "y": 25,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -677,22 +677,22 @@
     },
     {
       "type": "secret_base",
-      "x": 16,
-      "y": 25,
+      "x": 22,
+      "y": 18,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE3_1"
     },
     {
       "type": "secret_base",
-      "x": 17,
-      "y": 25,
+      "x": 15,
+      "y": 19,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE4_1"
     },
     {
       "type": "sign",
-      "x": 33,
-      "y": 39,
+      "x": 17,
+      "y": 40,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route110_EventScript_TrainerTipsPrlzSleep"
@@ -723,8 +723,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 35,
-      "y": 39,
+      "x": 28,
+      "y": 40,
       "elevation": 3,
       "item": "ITEM_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE"

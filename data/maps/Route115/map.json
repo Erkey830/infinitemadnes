@@ -92,7 +92,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 14,
+      "x": 11,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -335,20 +335,22 @@
     },
     {
       "x": 21,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
-      "x": 36,
+      "x": 34,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "secret_base",
@@ -417,15 +419,15 @@
     },
     {
       "type": "secret_base",
-      "x": 7,
-      "y": 20,
+      "x": 15,
+      "y": 24,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE2_4"
     },
     {
       "type": "secret_base",
-      "x": 8,
-      "y": 20,
+      "x": 11,
+      "y": 27,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE3_3"
     },
@@ -445,8 +447,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 15,
-      "y": 49,
+      "x": 14,
+      "y": 45,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE"

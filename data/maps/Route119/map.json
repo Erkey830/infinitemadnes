@@ -171,7 +171,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
       "x": 28,
-      "y": 14,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
       "movement_range_x": 0,
@@ -365,7 +365,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 8,
+      "x": 9,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -378,7 +378,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 9,
+      "x": 10,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -444,7 +444,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
       "x": 35,
-      "y": 93,
+      "y": 92,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -482,8 +482,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KECLEON",
-      "x": 25,
-      "y": 15,
+      "x": 30,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
@@ -595,7 +595,7 @@
     },
     {
       "x": 33,
-      "y": 109,
+      "y": 110,
       "elevation": 0,
       "dest_map": "MAP_ROUTE119_HOUSE",
       "dest_warp_id": "0"
@@ -829,7 +829,7 @@
     },
     {
       "type": "secret_base",
-      "x": 16,
+      "x": 15,
       "y": 81,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_BLUE_CAVE3_3"

@@ -1634,3 +1634,41 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_petalburgnds[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/petalburgnds/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_petalburgnds[] = INCBIN_U32("data/tilesets/secondary/petalburgnds/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_rustboronds[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboronds/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_rustboronds[] = INCBIN_U32("data/tilesets/secondary/rustboronds/tiles.4bpp.lz");

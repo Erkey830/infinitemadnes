@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_ROUTE110",
-      "offset": -60,
+      "offset": -58,
       "direction": "right"
     }
   ],
@@ -301,7 +301,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 12,
+      "x": 11,
       "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

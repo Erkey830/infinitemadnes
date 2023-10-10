@@ -409,7 +409,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 32,
+      "x": 31,
       "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
@@ -474,7 +474,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 26,
+      "x": 28,
       "y": 132,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -488,7 +488,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 20,
-      "y": 132,
+      "y": 133,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -566,7 +566,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 19,
-      "y": 118,
+      "y": 116,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -591,8 +591,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
-      "x": 20,
-      "y": 53,
+      "x": 18,
+      "y": 51,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -604,8 +604,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 19,
-      "y": 53,
+      "x": 18,
+      "y": 52,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -652,8 +652,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
-      "y": 58,
+      "x": 31,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_MIRAGE_TOWER_1F",
       "dest_warp_id": "0"
@@ -1038,15 +1038,15 @@
     },
     {
       "type": "secret_base",
-      "x": 35,
-      "y": 1,
+      "x": 36,
+      "y": 8,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_RED_CAVE2_3"
     },
     {
       "type": "secret_base",
-      "x": 35,
-      "y": 31,
+      "x": 37,
+      "y": 25,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE4_3"
     },
@@ -1067,8 +1067,8 @@
     },
     {
       "type": "sign",
-      "x": 7,
-      "y": 84,
+      "x": 8,
+      "y": 85,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route111_EventScript_TrainerTipsSpAtkSpDef"
@@ -1082,8 +1082,8 @@
     },
     {
       "type": "secret_base",
-      "x": 13,
-      "y": 19,
+      "x": 9,
+      "y": 21,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE1_1"
     },
@@ -1105,8 +1105,8 @@
     },
     {
       "type": "sign",
-      "x": 24,
-      "y": 116,
+      "x": 23,
+      "y": 117,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route111_EventScript_TrainerHillSign"

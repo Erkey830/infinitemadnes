@@ -790,7 +790,7 @@
     {
       "type": "secret_base",
       "x": 29,
-      "y": 85,
+      "y": 86,
       "elevation": 5,
       "secret_base_id": "SECRET_BASE_SHRUB4_2"
     },
@@ -811,7 +811,7 @@
     {
       "type": "secret_base",
       "x": 31,
-      "y": 23,
+      "y": 24,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_SHRUB2_3"
     },
@@ -841,7 +841,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 24,
+      "x": 25,
       "y": 42,
       "elevation": 3,
       "item": "ITEM_ZINC",

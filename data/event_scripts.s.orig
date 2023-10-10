@@ -1079,6 +1079,4 @@ EventScript_VsSeekerChargingDone::
     .include "data/scripts/dexnav.inc"
     
 =======
-
-	.include "data/maps/NewMap1/scripts.inc"
->>>>>>> 4e5f16e061 (graphics nds style)
+>>>>>>> 5ac968a29b (hoenn nds style)

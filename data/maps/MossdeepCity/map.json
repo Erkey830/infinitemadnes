@@ -110,7 +110,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 55,
+      "x": 59,
       "y": 5,
       "elevation": 7,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -268,7 +268,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
+      "x": 29,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
@@ -290,13 +290,13 @@
     },
     {
       "x": 49,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_HOUSE3",
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
+      "x": 18,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
@@ -311,7 +311,7 @@
     },
     {
       "x": 64,
-      "y": 15,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
       "dest_warp_id": "0"
@@ -435,7 +435,7 @@
     },
     {
       "type": "sign",
-      "x": 29,
+      "x": 30,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -452,14 +452,14 @@
     {
       "type": "sign",
       "x": 66,
-      "y": 16,
+      "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_SpaceCenterSign"
     },
     {
       "type": "sign",
-      "x": 30,
+      "x": 31,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",

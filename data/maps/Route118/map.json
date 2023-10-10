@@ -32,7 +32,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 35,
+      "x": 36,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -45,7 +45,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 36,
+      "x": 37,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -58,7 +58,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 37,
+      "x": 38,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -202,7 +202,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 7,
-      "y": 12,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -293,7 +293,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 7,
-      "y": 7,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -306,15 +306,15 @@
   ],
   "warp_events": [
     {
-      "x": 42,
-      "y": 6,
+      "x": 48,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
-      "x": 9,
-      "y": 6,
+      "x": 11,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
@@ -352,15 +352,15 @@
   "bg_events": [
     {
       "type": "secret_base",
-      "x": 47,
-      "y": 14,
+      "x": 46,
+      "y": 13,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_RED_CAVE1_1"
     },
     {
       "type": "sign",
       "x": 13,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route118_EventScript_RouteSignMauville"
@@ -389,15 +389,15 @@
     },
     {
       "type": "secret_base",
-      "x": 47,
-      "y": 5,
+      "x": 43,
+      "y": 6,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE1_3"
     },
     {
       "type": "secret_base",
-      "x": 46,
-      "y": 5,
+      "x": 42,
+      "y": 6,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_TREE2_1"
     },

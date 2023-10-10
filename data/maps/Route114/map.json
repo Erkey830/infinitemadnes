@@ -27,7 +27,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 31,
+      "x": 32,
       "y": 43,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 31,
+      "x": 32,
       "y": 44,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -118,7 +118,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 31,
+      "x": 32,
       "y": 45,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
@@ -387,20 +387,20 @@
     },
     {
       "x": 29,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROUTE114_FOSSIL_MANIACS_HOUSE",
       "dest_warp_id": "0"
     },
     {
       "x": 27,
-      "y": 36,
+      "y": 37,
       "elevation": 0,
       "dest_map": "MAP_ROUTE114_LANETTES_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 6,
+      "x": 7,
       "y": 46,
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
@@ -414,7 +414,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -434,8 +436,8 @@
     },
     {
       "type": "secret_base",
-      "x": 9,
-      "y": 47,
+      "x": 11,
+      "y": 45,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_BROWN_CAVE1_1"
     },
@@ -477,7 +479,7 @@
     {
       "type": "sign",
       "x": 25,
-      "y": 38,
+      "y": 37,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route114_EventScript_LanettesHouseSign"
