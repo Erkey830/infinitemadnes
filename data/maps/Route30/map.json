@@ -17,11 +17,6 @@
       "map": "MAP_CHERRYGROVE_CITY",
       "offset": -14,
       "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE31",
-      "offset": -26,
-      "direction": "up"
     }
   ],
   "object_events": [

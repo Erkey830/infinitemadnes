@@ -63,6 +63,10 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_NEW_BARK_TOWN       (57 | (0 << 8))
+#define MAP_ROUTE29             (58 | (0 << 8))
+#define MAP_CHERRYGROVE_CITY    (59 | (0 << 8))
+#define MAP_ROUTE30             (60 | (0 << 8))
 
 // gMapGroup_TownsAndRoutesJohto
 #define MAP_NEW_BARK_TOWN    (0 | (1 << 8))
