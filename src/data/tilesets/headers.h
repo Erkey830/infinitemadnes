@@ -860,3 +860,25 @@ const struct Tileset gTileset_battlefrontiersinbugs =
     .metatileAttributes = gMetatileAttributes_battlefrontiersinbugs,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_JohtoGeneral =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_JohtoGeneral,
+    .palettes = gTilesetPalettes_JohtoGeneral,
+    .metatiles = gMetatiles_JohtoGeneral,
+    .metatileAttributes = gMetatileAttributes_JohtoGeneral,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_1J =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_1J,
+    .palettes = gTilesetPalettes_1J,
+    .metatiles = gMetatiles_1J,
+    .metatileAttributes = gMetatileAttributes_1J,
+    .callback = NULL,
+};

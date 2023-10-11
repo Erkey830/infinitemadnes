@@ -216,3 +216,9 @@ const u16 gMetatileAttributes_rustboronds[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_battlefrontiersinbugs[] = INCBIN_U16("data/tilesets/primary/battlefrontiersinbugs/metatiles.bin");
 const u16 gMetatileAttributes_battlefrontiersinbugs[] = INCBIN_U16("data/tilesets/primary/battlefrontiersinbugs/metatile_attributes.bin");
+
+const u16 gMetatiles_JohtoGeneral[] = INCBIN_U16("data/tilesets/primary/johto_general/metatiles.bin");
+const u16 gMetatileAttributes_JohtoGeneral[] = INCBIN_U16("data/tilesets/primary/johto_general/metatile_attributes.bin");
+
+const u16 gMetatiles_1J[] = INCBIN_U16("data/tilesets/secondary/1j/metatiles.bin");
+const u16 gMetatileAttributes_1J[] = INCBIN_U16("data/tilesets/secondary/1j/metatile_attributes.bin");

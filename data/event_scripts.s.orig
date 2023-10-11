@@ -1079,4 +1079,12 @@ EventScript_VsSeekerChargingDone::
     .include "data/scripts/dexnav.inc"
     
 =======
->>>>>>> 5ac968a29b (hoenn nds style)
+
+	.include "data/maps/NewBarkTown/scripts.inc"
+
+	.include "data/maps/Route29/scripts.inc"
+
+	.include "data/maps/CherrygroveCity/scripts.inc"
+
+	.include "data/maps/Route30/scripts.inc"
+>>>>>>> ef53e6e559 (fix triple tiles + some maps johto)
