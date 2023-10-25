@@ -592,18 +592,6 @@ static const union AnimCmd sAnimSave[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimCard[] =
-{
-    ANIMCMD_FRAME(112, 0),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sAnimSave[] =
-{
-    ANIMCMD_FRAME(128, 0),
-    ANIMCMD_END,
-};
-
 static const union AnimCmd sAnimOption[] =
 {
     ANIMCMD_FRAME(112, 0),
