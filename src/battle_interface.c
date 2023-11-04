@@ -1087,7 +1087,7 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
         objVram = (void *)(OBJ_VRAM0);
         objVram += spriteTileNum + 0x400;
     }
-    //TextIntoHealthboxObject(objVram, windowTileData, 3);
+    TextIntoHealthboxObject(objVram, windowTileData, 3); //PRINTEAR LV DEL PKMN
     RemoveWindowOnHealthbox(windowId);
 }
 
@@ -1377,8 +1377,8 @@ void ChangeMegaTriggerSprite(u8 spriteId, u8 animId)
 
 #define SINGLES_MEGA_TRIGGER_POS_X_OPTIMAL (30)
 #define SINGLES_MEGA_TRIGGER_POS_X_PRIORITY (31)
-#define SINGLES_MEGA_TRIGGER_POS_X_SLIDE (15)
-#define SINGLES_MEGA_TRIGGER_POS_Y_DIFF (-11)
+#define SINGLES_MEGA_TRIGGER_POS_X_SLIDE (20)
+#define SINGLES_MEGA_TRIGGER_POS_Y_DIFF (-7)
 
 #define DOUBLES_MEGA_TRIGGER_POS_X_OPTIMAL (30)
 #define DOUBLES_MEGA_TRIGGER_POS_X_PRIORITY (31)
