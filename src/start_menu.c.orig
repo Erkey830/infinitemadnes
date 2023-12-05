@@ -580,12 +580,6 @@ static const union AnimCmd sAnimNav[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimQuest[] =
-{
-    ANIMCMD_FRAME(64, 0),
-    ANIMCMD_END,
-};
-
 static const union AnimCmd sAnimCard[] =
 {
     ANIMCMD_FRAME(80, 0),
@@ -705,8 +699,6 @@ static bool32 InitStartMenuStep(void)
     case 3:
         if (GetSafariZoneFlag())
             ShowSafariBallsWindow();
-        else
-            ShowStartMenuExtraWindow();
         if (InBattlePyramid())
             ShowPyramidFloorWindow();
         sInitStartMenuData[0]++;
@@ -1680,19 +1672,12 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
     list[*pos] = newEntry;
     (*pos)++;
 }
+<<<<<<< HEAD
 
 static bool8 StartMenuDexNavCallback(void)
 {
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
     return TRUE;
 }
-
-static void ShowStartMenuExtraWindow(void) // Función que carga una ventana auxiliar en el menú de pausa. 10/04/2023
-{   
-    sSafariBallsWindowId = AddWindow(&sStartMenuWindowTemplate);
-    PutWindowTilemap(sSafariBallsWindowId);
-    DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
-    FormatDecimalTimeWOSeconds(gStringVar4, Rtc_GetCurrentHour(), Rtc_GetCurrentMinute());                                     
-    AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
-    CopyWindowToVram(sSafariBallsWindowId, 3);
-}
+=======
+>>>>>>> 281cd825d3 (fix start menu)
