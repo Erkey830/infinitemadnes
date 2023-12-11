@@ -119,6 +119,7 @@ static void SpriteCB_UnusedBattleInit_Main(struct Sprite *sprite);
 static void TrySpecialEvolution(void);
 static u32 Crc32B (const u8 *data, u32 size);
 static u32 GeneratePartyHash(const struct Trainer *trainer, u32 i);
+u16 HasLevelEvolution(u16 species, u8 level);
 
 EWRAM_DATA u16 gBattle_BG0_X = 0;
 EWRAM_DATA u16 gBattle_BG0_Y = 0;
@@ -2215,6 +2216,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
     u32 personalityValue;
     s32 i;
     u8 monsCount;
+    u8 level = GetHighestLevelInPlayerParty();
     if (battleTypeFlags & BATTLE_TYPE_TRAINER && !(battleTypeFlags & (BATTLE_TYPE_FRONTIER
                                                                         | BATTLE_TYPE_EREADER_TRAINER
                                                                         | BATTLE_TYPE_TRAINER_HILL)))
@@ -2243,6 +2245,19 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 fixedOtId = 0;
             u32 ability = 0;
 
+            if (level + partyData[i].lvl > 100)
+                {
+                    level = 100;
+                }
+                else if (level + partyData[i].lvl < 1)
+                {
+                    level = 1;
+                }
+                else
+                {
+                    level = partyData[i].lvl;
+                }
+
             if (trainer->doubleBattle == TRUE)
                 personalityValue = 0x80;
             else if (trainer->encounterMusic_gender & F_TRAINER_FEMALE)
@@ -2261,7 +2276,10 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            CreateMon(&party[i], partyData[i].species, partyData[i].lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
+            if(HasLevelEvolution( partyData[i].species, level) != partyData[i].species)
+                CreateMon(&party[i], HasLevelEvolution( partyData[i].species, level), level, 0, TRUE, personalityValue, otIdType, fixedOtId);
+            else
+                CreateMon(&party[i], partyData[i].species, level, 0, TRUE, personalityValue, otIdType, fixedOtId);  
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
             CustomTrainerPartyAssignMoves(&party[i], &partyData[i]);
@@ -6133,4 +6151,19 @@ bool32 IsWildMonSmart(void)
 #else
     return FALSE;
 #endif
+}
+
+u16 HasLevelEvolution(u16 species, u8 level)
+{
+    const struct Evolution *evolutions = GetSpeciesEvolutions(species);
+
+    if(evolutions != NULL)
+    {
+        if(evolutions[0].param <= level && evolutions[0].method == EVO_LEVEL)
+            return HasLevelEvolution(evolutions[0].targetSpecies, level);
+        else
+            return species;
+    }
+
+    return species;
 }
