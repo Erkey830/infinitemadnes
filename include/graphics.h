@@ -1755,6 +1755,7 @@ extern const u8 gBagMenuHMIcon_Gfx[];
 extern const u32 gBagMaleTiles[];
 extern const u32 gBagFemaleTiles[];
 extern const u32 gBagPalette[];
+extern const u32 gBagFemalePalette[];
 extern const u32 gBerryCheckCircle_Gfx[];
 
 //intro graphics
