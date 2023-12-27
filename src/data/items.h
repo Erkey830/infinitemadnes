@@ -139,7 +139,7 @@ static const u8 sTeraShardDesc[]      = _("Estos fragmentos pueden\n"
                                           "formarse cuando un\n"
                                           "Pokémon Tera se desmaya.");
 
-const struct Item gItems[] =
+const struct Item gItemsInfo[] =
 {
     [ITEM_NONE] =
     {
@@ -11065,7 +11065,6 @@ const struct Item gItems[] =
     {
         .name = _("Másc. cim."),
         .price = 0,
-        .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Roca\n"
                                        "en combate."),
@@ -11079,7 +11078,6 @@ const struct Item gItems[] =
     {
         .name = _("Másc. aguas"),
         .price = 0,
-        .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Agua\n"
                                        "en combate."),
@@ -11093,7 +11091,6 @@ const struct Item gItems[] =
     {
         .name = _("Másc. hoguera"),
         .price = 0,
-        .holdEffect = HOLD_EFFECT_MASK,
         .description = COMPOUND_STRING("Permite a Ogerpon\n"
                                        "usar el tipo Fuego\n"
                                        "en combate."),
@@ -11195,14 +11192,4 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
-    [ITEM_POKE_VIAL] =
-    {
-        .name = _("Pokévial"),
-        .price = 0,
-        .description = COMPOUND_STRING("Restaura los PS\n"
-                                       "del equipo POKéMON."),
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_PokeVial,
-    },
 };
