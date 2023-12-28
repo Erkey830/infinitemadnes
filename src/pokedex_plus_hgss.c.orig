@@ -193,6 +193,16 @@ static const u8 sText_Stats_eggGroup_WATER_2[] = _("AGUA {CIRCLE_2}");
 static const u8 sText_Stats_eggGroup_DITTO[] = _("DITTO");
 static const u8 sText_Stats_eggGroup_DRAGON[] = _("DRAGON");
 static const u8 sText_Stats_eggGroup_NO_EGGS_DISCOVERED[] = _("---");
+<<<<<<< HEAD
+static const u8 sText_Stats_eggGroup_UNKNOWN[] = _("???");
+static const u8 sText_Dex_SEEN[] = _("SEEN");
+static const u8 sText_Dex_OWN[] = _("OWN");
+
+static const u8 sText_EVO_Buttons[] = _("{DPAD_UPDOWN}EVOs  {A_BUTTON}CHECK");
+static const u8 sText_EVO_Buttons_Decapped[] = _("{DPAD_UPDOWN}Evos  {A_BUTTON}Check");
+static const u8 sText_EVO_Buttons_PE[] = _("{DPAD_UPDOWN}EVOs  {A_BUTTON}CHECK  {START_BUTTON}FORMs");
+static const u8 sText_EVO_Buttons_Decapped_PE[] = _("{DPAD_UPDOWN}Evos  {A_BUTTON}Check  {START_BUTTON}Forms");
+=======
 static const u8 sText_Dex_SEEN[] = _("VISTOS");
 static const u8 sText_Dex_OWN[] = _("CAPTURADOS");
 
@@ -200,6 +210,7 @@ static const u8 sText_EVO_Buttons[] = _("{DPAD_UPDOWN}EVOs  {A_BUTTON}MIRAR");
 static const u8 sText_EVO_Buttons_Decapped[] = _("{DPAD_UPDOWN}Evos  {A_BUTTON}MIRAR");
 static const u8 sText_EVO_Buttons_PE[] = _("{DPAD_UPDOWN}EVOs  {A_BUTTON}MIRAR  {START_BUTTON}FORMAS");
 static const u8 sText_EVO_Buttons_Decapped_PE[] = _("{DPAD_UPDOWN}Evos  {A_BUTTON}Mirar  {START_BUTTON}Formas");
+>>>>>>> 96665d117b (Traducido guardando... y pokédex)
 static const u8 sText_EVO_Name[] = _("{STR_VAR_3}:");
 static const u8 sText_EVO_PreEvo[] = _("{STR_VAR_1} evoluciona de {STR_VAR_2}");
 static const u8 sText_EVO_PreEvo_PE_Mega[] = _("{STR_VAR_1} Mega Evoluciona con {STR_VAR_2}");
@@ -241,13 +252,23 @@ static const u8 sText_EVO_CRITICAL_HITS[] = _("Land {STR_VAR_2} critical hits in
 static const u8 sText_EVO_SCRIPT_TRIGGER_DMG[] = _("Recibiendo {STR_VAR_2} PS de daño");
 static const u8 sText_EVO_DARK_SCROLL[] = _("ScrllOfDrknss is used");
 static const u8 sText_EVO_WATER_SCROLL[] = _("ScrollOfWatrs is used");
-static const u8 sText_EVO_ITEM_NIGHT[] = _("{STR_VAR_2} es usado, noche");
-static const u8 sText_EVO_ITEM_DAY[] = _("{STR_VAR_2} es usado, día");
-static const u8 sText_EVO_ITEM_HOLD[] = _("{LV}{UP_ARROW}, teniendo {STR_VAR_2}");
+<<<<<<< HEAD
+static const u8 sText_EVO_ITEM_NIGHT[] = _("{STR_VAR_2} is used, night");
+static const u8 sText_EVO_ITEM_DAY[] = _("{STR_VAR_2} is used, day");
+static const u8 sText_EVO_ITEM_HOLD[] = _("{LV}{UP_ARROW}, holds {STR_VAR_2}");
 static const u8 sText_EVO_LEVEL_MOVE_TWENTY_TIMES[] = _("{LV}{UP_ARROW} after 20x {STR_VAR_2}");
 static const u8 sText_EVO_LEVEL_RECOIL_DAMAGE_MALE[] = _("{LV}{UP_ARROW} with {STR_VAR_2} recoil, male");
 static const u8 sText_EVO_LEVEL_RECOIL_DAMAGE_FEMALE[] = _("{LV}{UP_ARROW} with {STR_VAR_2} recoil, female");
 static const u8 sText_EVO_LEVEL_ITEM_COUNT_999[] = _("{LV}{UP_ARROW} with 999 {STR_VAR_2} in bag");
+static const u8 sText_EVO_UNKNOWN[] = _("Method unknown");
+static const u8 sText_EVO_NONE[] = _("{STR_VAR_1} has no evolution.");
+=======
+static const u8 sText_EVO_ITEM_NIGHT[] = _("{STR_VAR_2} es usado, noche");
+static const u8 sText_EVO_ITEM_DAY[] = _("{STR_VAR_2} es usado, día");
+static const u8 sText_EVO_ITEM_HOLD[] = _("{LV}{UP_ARROW}, teniendo {STR_VAR_2}");
+static const u8 sText_EVO_UNKNOWN[] = _("Método desconocido");
+static const u8 sText_EVO_NONE[] = _("{STR_VAR_1} no tiene evo.");
+>>>>>>> 96665d117b (Traducido guardando... y pokédex)
 
 static const u8 sText_FORMS_Buttons_PE[] = _("{A_BUTTON}MODO FORMAs  {START_BUTTON}EVOs");
 static const u8 sText_FORMS_Buttons_Decapped_PE[] = _("{START_BUTTON}Evos");
