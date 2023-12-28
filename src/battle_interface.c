@@ -2908,9 +2908,20 @@ static u8 *AddTextPrinterAndCreateWindowOnHealthbox(const u8 *str, u32 x, u32 y,
     winId = AddWindow(&winTemplate);
     FillWindowPixelBuffer(winId, PIXEL_FILL(bgColor));
 
-    color[0] = bgColor;
-    color[1] = 2;
-    color[2] = 3;
+    if (bgColor == HEALTHBOX_TRANSPARENT) { // nickname
+        color[0] = bgColor;
+        color[1] = HEALTHBOX_WHITE;
+        color[2] = HEALTHBOX_DARK_GRAY_2;
+        AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+    }
+    else { // hp text
+        color[0] = bgColor;
+        color[1] = HEALTHBOX_WHITE;
+        color[2] = HEALTHBOX_GRAY;
+        AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+    }
+
+     //AddTextPrinterParameterized4(winId, FONT_SHORT_COPY_3, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
 
     AddTextPrinterParameterized4(winId, FONT_SMALL, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
     *windowId = winId;
