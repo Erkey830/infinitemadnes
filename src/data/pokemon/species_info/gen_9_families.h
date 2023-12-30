@@ -30,10 +30,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 4,
         .weight = 41,
         .description = COMPOUND_STRING(
-            "The sweet scent its body gives off\n"
-            "mesmerizes those around it. The\n"
-            "scent grows stronger when this\n"
-            "Pokémon is in the sun."),
+            "El dulce aroma que emana su cuerpo\n"
+"hipnotiza a quien lo rodean. Este\n"
+"aroma se intensifica cuando este\n"
+"Pokémon está bajo el sol."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -83,10 +83,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 9,
         .weight = 122,
         .description = COMPOUND_STRING(
-            "Floragato deftly wields the vine\n"
-            "hidden beneath its long fur, slamming\n"
-            "the hard flower bud against its\n"
-            "opponents."),
+            "Floragato maneja hábilmente la enredadera\n"
+"oculta bajo su pelaje largo, golpeando\n"
+"el capullo de flor duro contra sus\n"
+"oponentes."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -136,10 +136,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 15,
         .weight = 312,
         .description = COMPOUND_STRING(
-            "This Pokémon uses the reflective\n"
-            "fur lining its cape to camouflage the\n"
-            "stem of its flower, creating the\n"
-            "illusion that the flower is floating."),
+            "Este Pokémon utiliza el pelaje\n"
+"reflectante que reviste su capa para\n"
+"camuflar el tallo de su flor, creando\n"
+"la ilusión de que la flor está flotando."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -190,10 +190,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 4,
         .weight = 98,
         .description = COMPOUND_STRING(
-            "Its flame sac is small, so energy is\n"
-            "always leaking out. This energy is\n"
-            "released from the dent atop\n"
-            "Fuecoco's head and flickers to and fro."),
+            "Su saco de fuego es pequeño, por lo que la\n"
+"energía siempre está escapando. Se libera\n"
+"desde la parte superior de la cabeza\n"
+"de Fuecoco y titila de un lado a otro."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -243,10 +243,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 10,
         .weight = 307,
         .description = COMPOUND_STRING(
-            "The combination of Crocalor's fire\n"
-            "energy and overflowing vitality has\n"
-            "caused an egg-shaped fireball to\n"
-            "appear on the Pokémon's head."),
+            "La combinación de fuego de Crocalor y su\n"
+"fuerte vitalidad ha provocado que salga\n"
+"una bola de fuego en forma de huevo en\n"
+"la cabeza del Pokémon."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -296,10 +296,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 16,
         .weight = 3265,
         .description = COMPOUND_STRING(
-            "Skeledirge's gentle singing\n"
-            "soothes the souls of all that hear it. It\n"
-            "burns its enemies to a crisp with\n"
-            "flames of over 5,400 degrees Fahrenheit."),
+            "El canto suave de Skeledirge calma las\n"
+"almas de todos los que lo escuchan. Quema\n" 
+"a sus enemigos hasta carbonizarlos\n"
+"con llamas de más de 2.000 ºC."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -350,10 +350,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 5,
         .weight = 61,
         .description = COMPOUND_STRING(
-            "Its strong legs let it easily swim\n"
-            "around in even fast-flowing rivers.\n"
-            "It likes to keep things tidy and is\n"
-            "prone to overthinking things."),
+            "Con sus fuertes patas, puede nadar\n"
+"fácilmente incluso en ríos de flujo rápido.\n"
+"Le gusta mantener las cosas ordenadas\n"
+"y tiende a pensar demasiado en las cosas."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -403,10 +403,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 12,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "The hardworking Quaxwell observes\n"
-            "people and Pokémon from various\n"
-            "regions and incorporates their\n"
-            "movements into its own dance routines."),
+            "El trabajador Quaxwell observa\n"
+"a personas y Pokémon de varias\n"
+"regiones e incorpora sus\n"
+"movs. en sus propias rutinas de baile."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -456,10 +456,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 18,
         .weight = 619,
         .description = COMPOUND_STRING(
-            "A single kick from a Quaquaval can\n"
-            "send a truck rolling. This Pokémon\n"
-            "uses its powerful legs to perform\n"
-            "striking dances from far-off lands."),
+            "Un solo golpe de un Quaquaval puede\n"
+"hacer rodar un camión. Este Pokémon\n"
+"utiliza sus fuertes piernas para realizar\n"
+"danzas impactantes de tierras lejanas."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
