@@ -1,5 +1,102 @@
 #include "constants/abilities.h"
+<<<<<<< HEAD
 #include "species_info/shared_dex_text.h"
+=======
+
+// Shared Pokédex entries
+const u8 gPichuPokedexText[] = _(
+    "Todavía es inepto para retener elect.\nCuando se asusta, descarga energía\nsin querer. Mejora en retener energía\na medida que envejece.");
+
+const u8 gPikachuPokedexText[] = _(
+    "Tiene unas bolsas en las mejillas en las\n"
+    "en las que almacena electricidad.\n"
+    "Cuando la libera de golpe, la potencia\n"
+    "de la descarga es igual a la de un rayo.");
+
+const u8 gUnownPokedexText[] = _(
+    "Tiene la forma de antiguos caracteres\nde texto. Aunque la investigación está en\ncurso, es un misterio cuál llegó primero,\nsi los antiguos escritos o los Unown.");
+
+const u8 gDeoxysNormalPokedexText[] = _(
+    "Deoxys surgió a partir de un virus que\nllegó desde el espacio. Es altamente\ninteligente y puede disparar láseres\ndesde el órgano cristalino en su pecho.");
+
+const u8 gArceusPokedexText[] = _(
+    "En la mitología se cuenta que este\nPokémon surgió de un huevo y dio forma a\ntodo lo que hay en este mundo, incluso\nantes de que existiera el universo.");
+
+const u8 gGenesectPokedexText[] = _(
+    "Hace más de 300 millones de años, se\nle temía como el cazador más fuerte. El\nEquipo Plasma lo alteró y le colocó un\ncañón en la espalda.");
+
+const u8 gGreninjaPokedexText[] = _(
+    "Aparece y desaparece como un ninja. Juega\ncon sus enemigos usando movimientos\nrápidos, mientras los corta con estrellas\narrojadizas hechas de agua comprimida.");
+
+const u8 gFurfrouPokedexText[] = _(
+    "Cortar su pelaje esponjoso no solo lo hace\nmás elegante, sino que también aumenta la\nrapidez de sus movimientos. Estos Pokémon\neran los guardianes de los reyes.");
+
+const u8 gXerneasPokedexText[] = _(
+    "Las leyendas dicen que cuando los cuernos\nen su cabeza brillan en siete colores, está\ncompartiendo la vida eterna. Durmió\ndurante mil años en forma de árbol.");
+
+const u8 gZygarde50PokedexText[] = _(
+    "Se dice que está monitoreando el\necosistema desde lo más profundo de las\ncuevas donde vive. Hay rumores de\nun poder mayor yace oculto dentro él.");
+
+const u8 gZygarde10PokedexText[] = _(
+    "Esta es Zygarde cuando aproximadamente\nel 10% de sus piezas han sido ensambladas.\nSalta hacia el pecho de su oponente y\nhunde sus afilados colmillos en ellos.");
+
+const u8 gRockruffPokedexText[] = _(
+    "Este Pokémon ha vivido con las personas\ndesde tiempos antiguos. Puede sentir\ncuando su Entrenador está deprimido y se\nquedará cerca de su Entrenador.");
+
+const u8 gSilvallyNormalPokedexText[] = _(
+    "La confianza en su compañero lo\ndespierta. Es capaz de cambiar su tipo\nequipando recuerdos esp.,una caract,\nque se muestra bien en la batalla.");
+
+const u8 gSilvallyMemoryPokedexText[] = _(
+    "Al despertar, se activa su sistema RKS. Al\nutilizar recuerdos específicos, este\nPokémon puede adaptar su tipo para\nconfundir a sus enemigos.");
+
+const u8 gMiniorMeteorPokedexText[] = _(
+    "Originalmente haciendo su hogar en la capa\nde ozono, se precipita hacia el suelo\ncuando la concha que envuelve su cuerpo\nse vuelve demasiado pesada.");
+
+const u8 gMiniorCorePokedexText[] = _(
+    "Si su núcleo queda expuesto, pronto\nmorirá. Es posible que pueda sobrevivir si\nse coloca rápidamente en una Poké Ball.");
+
+const u8 gAlcremieVanillaCreamPokedexText[] = _(
+    "Cuando confía en un Entrenador,\nle ofrecerá bayas decoradas con crema.");
+
+const u8 gAlcremieRubyCreamPokedexText[] = _(
+    "En el momento de evolucionar, adquirió\nun sabor dulce y ácido. Esto se debe\na la forma en que sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gAlcremieMatchaCreamPokedexText[] = _(
+    "En el momento de evolucionar, adquirió un\nsabor aromático. Esto se debe a la forma\nen que sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gAlcremieMintCreamPokedexText[] = _(
+    "En el momento de evolucionar, adquirió\nun sabor refrescante. Esto se debe a la\nforma en que sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gAlcremieLemonCreamPokedexText[] = _(
+    "En el momento de evolucionar, adquirió\nun sabor agrio. Esto se debe a la\nforma en que sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gAlcremieSaltedCreamPokedexText[] = _(
+    "En el momento de evolucionar, adquirió\nun sabor salado. Esto se debe a la forma en\nque sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gAlcremieRubySwirlPokedexText[] = _(
+    "En el momento de evolucionar, adquirió un\nsabor mixto. Esto se debe a la forma en que\nsus células cambiaron espontáneamente\ndurante la evolución.");
+
+const u8 gAlcremieCaramelSwirlPokedexText[] = _(
+    "En el momento de evolucionar, adquirió un\nsabor amargo. Esto se debe a la forma en\nque sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gAlcremieRainbowSwirlPokedexText[] = _(
+    "En el momento de evolucionar, adquirió un\nsabor complejo. Esto se debe a la forma\nen que sus células cambiaron\nespontáneamente durante la evolución.");
+
+const u8 gToxtricityGigantamaxPokedexText[] = _(
+    "Fuera de control después de que su propio\nveneno penetrara en su cerebro, corre\ndescontrolado por la tierra en un frenesí,\ncontaminando el suelo con sudor tóxico.");
+
+const u8 gOgerponTealMaskPokedexText[] = _(
+    "El tipo de este Pokémon cambia según la\nmáscara que esté usando. Confunde a sus\nenemigoscon movimientos ágiles y patadas.");
+
+const u8 gOgerponWellspringMaskPokedexText[] = _(
+    "Esta forma destaca tanto en ataque\ncomo en defensa. Incesantemente desata\nmovs como un manantial arroja agua.");
+
+const u8 gOgerponHearthflameMaskPokedexText[] = _(
+    "Esta forma es la más agresiva,\nbombardeando a los enemigos con la\nintensidad de las llamas ardientes\ndentro de una hoguera.");
+
+const u8 gOgerponCornerstoneMaskPokedexText[] = _(
+    "En esta forma, utiliza el poder de la\npiedra. Su cuerpo es sólido como una roca,\nprotegiéndolo de todo tipo de ataques.");
+>>>>>>> 1351be369e (traducir 100% dex descriptions)
 
 // Macros for ease of use.
 
@@ -83,13 +180,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .shinyPalette = gMonShinyPalette_CircledQuestionMark,
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 0,
-<<<<<<< HEAD
+        FOOTPRINT(QuestionMark)
     #if OW_FOLLOWERS_ENABLED
         .followerData = {TAG_NONE, OBJ_EVENT_PAL_TAG_SUBSTITUTE, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 2, SHADOW_SIZE_M, FALSE, COMP, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Following, sPicTable_Substitute, gDummySpriteAffineAnimTable},
     #endif
-=======
-        FOOTPRINT(QuestionMark)
->>>>>>> 2e07dbb0ee (Add Gen 9 and PLA footprints + update some footprints (#4621))
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
     },
