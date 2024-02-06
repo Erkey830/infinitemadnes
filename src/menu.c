@@ -1068,7 +1068,7 @@ s8 ProcessMenuInput_other(void)
     return MENU_NOTHING_CHOSEN;
 }
 
-s8 Menu_ProcessInputNoWrapAround_other(void)
+s8 Menu_ProcessInputNoWrapAround(void)
 {
     u8 oldPos = sMenu.cursorPos;
 
@@ -2144,4 +2144,31 @@ void BufferSaveMenuText(u8 textId, u8 *dest, u8 color)
             *endOfString = EOS;
             break;
     }
+}
+
+u8 Menu_InitCursorInternal(u8 windowId, u8 fontId, u8 left, u8 top, u8 cursorHeight, u8 numChoices, u8 initialCursorPos, bool8 APressMuted)
+{
+    s32 pos;
+
+    sMenu.left = left;
+    sMenu.top = top;
+    sMenu.minCursorPos = 0;
+    sMenu.maxCursorPos = numChoices - 1;
+    sMenu.windowId = windowId;
+    sMenu.fontId = fontId;
+    sMenu.optionHeight = cursorHeight;
+    sMenu.APressMuted = APressMuted;
+    pos = initialCursorPos;
+    if (pos < 0 || pos > sMenu.maxCursorPos)
+        sMenu.cursorPos = 0;
+    else
+        sMenu.cursorPos = pos;
+
+    Menu_MoveCursor(0);
+    return sMenu.cursorPos;
+}
+
+u8 Menu_InitCursor(u8 windowId, u8 fontId, u8 left, u8 top, u8 cursorHeight, u8 numChoices, u8 initialCursorPos)
+{
+    return Menu_InitCursorInternal(windowId, fontId, left, top, cursorHeight, numChoices, initialCursorPos, 0);
 }

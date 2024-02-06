@@ -740,26 +740,23 @@ static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 #define TAG_MON_MARKINGS 30003
 #define TAG_CATEGORY_ICONS 30004
 
-static const u16 sCategoryIcons_Pal[] = INCBIN_U16("graphics/interface/category_icons.gbapal");
-static const u32 sCategoryIcons_Gfx[] = INCBIN_U32("graphics/interface/category_icons.4bpp.lz");
-
 static const struct OamData sOamData_CategoryIcons =
 {
-    .size = SPRITE_SIZE(16x16),
-    .shape = SPRITE_SHAPE(16x16),
+    .size = SPRITE_SIZE(32x16),
+    .shape = SPRITE_SHAPE(32x16),
     .priority = 0,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_CategoryIcons =
+const struct CompressedSpriteSheet gSpriteSheet_CategoryIcons =
 {
-    .data = sCategoryIcons_Gfx,
-    .size = 16*16*3/2,
+    .data = gCategoryIcons_Gfx,
+    .size = 32*16*3/2,
     .tag = TAG_CATEGORY_ICONS,
 };
 
 static const struct SpritePalette sSpritePal_CategoryIcons =
 {
-    .data = sCategoryIcons_Pal,
+    .data = gCategoryIcons_Pal,
     .tag = TAG_CATEGORY_ICONS
 };
 
@@ -771,13 +768,13 @@ static const union AnimCmd sSpriteAnim_CategoryIcon0[] =
 
 static const union AnimCmd sSpriteAnim_CategoryIcon1[] =
 {
-    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_FRAME(8, 0),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_CategoryIcon2[] =
 {
-    ANIMCMD_FRAME(8, 0),
+    ANIMCMD_FRAME(16, 0),
     ANIMCMD_END
 };
 
@@ -788,7 +785,7 @@ static const union AnimCmd *const sSpriteAnimTable_CategoryIcons[] =
     sSpriteAnim_CategoryIcon2,
 };
 
-static const struct SpriteTemplate sSpriteTemplate_CategoryIcons =
+const struct SpriteTemplate gSpriteTemplate_CategoryIcons =
 {
     .tileTag = TAG_CATEGORY_ICONS,
     .paletteTag = TAG_CATEGORY_ICONS,
@@ -1137,7 +1134,7 @@ static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.
 static u8 ShowCategoryIcon(u32 category)
 {
     if (sMonSummaryScreen->categoryIconSpriteId == 0xFF)
-        sMonSummaryScreen->categoryIconSpriteId = CreateSprite(&sSpriteTemplate_CategoryIcons, 48, 129, 0);
+        sMonSummaryScreen->categoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 48, 129, 0);
 
     gSprites[sMonSummaryScreen->categoryIconSpriteId].invisible = FALSE;
     StartSpriteAnim(&gSprites[sMonSummaryScreen->categoryIconSpriteId], category);
@@ -1431,8 +1428,8 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 12:
-        LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
-        LoadCompressedSpriteSheet(&sSpriteSheet_CategoryIcons);
+        LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(14), 2 * PLTT_SIZE_4BPP);
+        LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
         LoadSpritePalette(&sSpritePal_CategoryIcons);
         sMonSummaryScreen->switchCounter = 0;
         return TRUE;

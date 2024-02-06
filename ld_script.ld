@@ -362,6 +362,7 @@ SECTIONS {
         src/pokemon_debug.o(.text);
         src/expansion_intro.o(.text);
 		src/dexnav.o(.text);
+        src/tm_case.o(.text);
     } > ROM =0
 
     script_data :
@@ -731,6 +732,8 @@ SECTIONS {
         src/pokemon_debug.o(.rodata);
         src/expansion_intro.o(.rodata);
 		src/dexnav.o(.rodata);
+        src/sound_check_menu.o(.rodata);
+        src/tm_case.o(.text);
     } > ROM =0
 
     song_data :

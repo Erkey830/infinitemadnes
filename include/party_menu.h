@@ -107,5 +107,6 @@ void MoveDeleterForgetMove(void);
 void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
+void CB2_ShowPartyMenuForItemUseTMCase(void);
 
 #endif // GUARD_PARTY_MENU_H

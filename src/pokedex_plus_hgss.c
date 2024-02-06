@@ -622,24 +622,21 @@ static u16 NationalPokedexNumToSpeciesHGSS(u16 nationalNum);
 
 #define TAG_CATEGORY_ICONS 30004
 
-static const u16 sCategoryIcons_Pal[] = INCBIN_U16("graphics/interface/category_icons.gbapal");
-static const u32 sCategoryIcons_Gfx[] = INCBIN_U32("graphics/interface/category_icons.4bpp.lz");
-
 static const struct OamData sOamData_CategoryIcons =
 {
-    .size = SPRITE_SIZE(16x16),
-    .shape = SPRITE_SHAPE(16x16),
+    .size = SPRITE_SIZE(32x16),
+    .shape = SPRITE_SHAPE(32x16),
     .priority = 0,
 };
 static const struct CompressedSpriteSheet sSpriteSheet_CategoryIcons =
 {
-    .data = sCategoryIcons_Gfx,
+    .data = gCategoryIcons_Gfx,
     .size = 16*16*3/2,
     .tag = TAG_CATEGORY_ICONS,
 };
 static const struct SpritePalette sSpritePal_CategoryIcons =
 {
-    .data = sCategoryIcons_Pal,
+    .data = gCategoryIcons_Pal,
     .tag = TAG_CATEGORY_ICONS
 };
 static const union AnimCmd sSpriteAnim_CategoryIcon0[] =
@@ -649,12 +646,12 @@ static const union AnimCmd sSpriteAnim_CategoryIcon0[] =
 };
 static const union AnimCmd sSpriteAnim_CategoryIcon1[] =
 {
-    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_FRAME(8, 0),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_CategoryIcon2[] =
 {
-    ANIMCMD_FRAME(8, 0),
+    ANIMCMD_FRAME(16, 0),
     ANIMCMD_END
 };
 static const union AnimCmd *const sSpriteAnimTable_CategoryIcons[] =
@@ -662,16 +659,6 @@ static const union AnimCmd *const sSpriteAnimTable_CategoryIcons[] =
     sSpriteAnim_CategoryIcon0,
     sSpriteAnim_CategoryIcon1,
     sSpriteAnim_CategoryIcon2,
-};
-static const struct SpriteTemplate sSpriteTemplate_CategoryIcons =
-{
-    .tileTag = TAG_CATEGORY_ICONS,
-    .paletteTag = TAG_CATEGORY_ICONS,
-    .oam = &sOamData_CategoryIcons,
-    .anims = sSpriteAnimTable_CategoryIcons,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy
 };
 
 //Stat bars by DizzyEgg
@@ -4373,6 +4360,7 @@ static const u8 sContestCategoryToOamPaletteNum[CONTEST_CATEGORIES_COUNT] =
     [CONTEST_CATEGORY_SMART] = 15,
     [CONTEST_CATEGORY_TOUGH] = 13,
 };
+
 static void SetTypeIconPosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
 {
     struct Sprite *sprite;
@@ -4387,6 +4375,7 @@ static void SetTypeIconPosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
     sprite->y = y + 8;
     SetSpriteInvisibility(spriteArrayId, FALSE);
 }
+
 static void PrintCurrentSpeciesTypeInfo(u8 newEntry, u16 species)
 {
     u8 type1, type2;
@@ -4408,13 +4397,13 @@ static void PrintCurrentSpeciesTypeInfo(u8 newEntry, u16 species)
 
     if (type1 == type2)
     {
-        SetTypeIconPosAndPal(type1, 147, 48, 0);
+        SetTypeIconPosAndPal(type1, 147, 47, 0);
         SetSpriteInvisibility(1, TRUE);
     }
     else
     {
-        SetTypeIconPosAndPal(type1, 147, 48, 0);
-        SetTypeIconPosAndPal(type2, 147 + 33, 48, 1);
+        SetTypeIconPosAndPal(type1, 147, 47, 0);
+        SetTypeIconPosAndPal(type2, 147 + 33, 47, 1);
     }
 
 }
@@ -4423,7 +4412,7 @@ static void CreateTypeIconSprites(void)
     u8 i;
 
     LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
-    LoadCompressedPalette(gMoveTypes_Pal, 0x1D0, 0x60);
+    LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(14), 2 * PLTT_SIZE_4BPP);
     for (i = 0; i < 2; i++)
     {
         if (sPokedexView->typeIconSpriteIds[i] == 0xFF)
@@ -4765,7 +4754,7 @@ static void LoadTilesetTilemapHGSS(u8 page)
 static u8 ShowCategoryIcon(u32 category)
 {
     if (sPokedexView->categoryIconSpriteId == 0xFF)
-        sPokedexView->categoryIconSpriteId = CreateSprite(&sSpriteTemplate_CategoryIcons, 139, 90, 0);
+        sPokedexView->categoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 139, 90, 0);
 
     gSprites[sPokedexView->categoryIconSpriteId].invisible = FALSE;
     StartSpriteAnim(&gSprites[sPokedexView->categoryIconSpriteId], category);
@@ -4907,8 +4896,8 @@ static void Task_LoadStatsScreen(u8 taskId)
         sPokedexView->typeIconSpriteIds[1] = 0xFF;
         CreateTypeIconSprites();
         sPokedexView->categoryIconSpriteId = 0xFF;
-        LoadCompressedPalette(gMoveTypes_Pal, 0x1D0, 0x60);
-        LoadCompressedSpriteSheet(&sSpriteSheet_CategoryIcons);
+        LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(14), 2 * PLTT_SIZE_4BPP);
+        LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
         LoadSpritePalette(&sSpritePal_CategoryIcons);
         gMain.state++;
         break;

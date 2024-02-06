@@ -3347,4 +3347,13 @@ extern const u8 gMailTilemap_Retro[];
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 
+extern const u16 gCategoryIcons_Pal[];
+extern const u32 gCategoryIcons_Gfx[];
+
+//Máquina de discos
+extern const u32 gTMCase_Gfx[];
+extern const u32 gTMCaseMenu_Tilemap[];
+extern const u32 gTMCaseMenu_Pal[];
+extern const u32 gTMCaseText_Pal[];
+
 #endif //GUARD_GRAPHICS_H
