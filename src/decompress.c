@@ -20,23 +20,20 @@ void LZDecompressVram(const u32 *src, void *dest)
 
 // Checks if `ptr` is likely LZ77 data
 // Checks word-alignment, min/max size, and header byte
-// Returns uncompressed size if true, 0 otherwise
-u32 IsLZ77Data(const void *ptr, u32 minSize, u32 maxSize) {
+bool32 IsLZ77Data(const void *ptr, u32 minSize, u32 maxSize) {
     const u8 *data = ptr;
     u32 size;
     // Compressed data must be word aligned
     if (((u32)ptr) & 3)
-        return 0;
+        return FALSE;
     // Check LZ77 header byte
     // See https://problemkaputt.de/gbatek.htm#biosdecompressionfunctions
     if (data[0] != 0x10)
-        return 0;
+        return FALSE;
 
     // Read 24-bit uncompressed size
     size = data[1] | (data[2] << 8) | (data[3] << 16);
-    if (size >= minSize && size <= maxSize)
-        return size;
-    return 0;
+    return (size >= minSize && size <= maxSize);
 }
 
 u16 LoadCompressedSpriteSheet(const struct CompressedSpriteSheet *src)
@@ -54,10 +51,20 @@ u16 LoadCompressedSpriteSheet(const struct CompressedSpriteSheet *src)
 u16 LoadCompressedSpriteSheetByTemplate(const struct SpriteTemplate *template, s32 offset) {
     struct SpriteTemplate myTemplate;
     struct SpriteFrameImage myImage;
+    const u8 *data = template->images->data;
     u32 size;
 
-    // Check for LZ77 header and read uncompressed size, or fallback if not compressed (zero size)
-    if ((size = IsLZ77Data(template->images->data, TILE_SIZE_4BPP, sizeof(gDecompressionBuffer))) == 0)
+    // (Heuristic) Check for LZ77 header
+    // See https://problemkaputt.de/gbatek.htm#biosdecompressionfunctions
+    // data[3] could be nonzero; but this would mean data >= 65536 bytes,
+    // which is 2048 tiles, far too big in practice
+    if (data[0] != 0x10 || data[3] != 0) // not compressed
+        return LoadSpriteSheetByTemplate(template, 0, offset);
+
+    // read uncompressed size from header
+    size = T1_READ_16(&data[1]);
+    // too big for compression buffer, so probably not compressed
+    if (size >= ARRAY_COUNT(gDecompressionBuffer))
         return LoadSpriteSheetByTemplate(template, 0, offset);
 
     LZ77UnCompWram(template->images->data, gDecompressionBuffer);
