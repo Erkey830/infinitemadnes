@@ -3207,6 +3207,29 @@ void SpriteCB_PlayerMonFromBall(struct Sprite *sprite)
         BattleAnimateBackSprite(sprite, sprite->sSpeciesId);
 }
 
+void SpriteCB_PlayerMonSlideIn(struct Sprite *sprite) {
+    if (sprite->data[3] == 0) {
+        PlaySE(SE_BALL_TRAY_ENTER);
+        sprite->data[3]++;
+    } else if (sprite->data[3] == 1) {
+        if (sprite->animEnded)
+            return;
+        sprite->data[4] = sprite->x;
+        sprite->x = -33;
+        sprite->invisible = FALSE;
+        sprite->data[3]++;
+    } else if (sprite->data[3] < 27) {
+        sprite->x += 4;
+        sprite->data[3]++;
+    } else {
+        sprite->data[3] = 0;
+        sprite->x = sprite->data[4];
+        sprite->data[4] = 0;
+        sprite->callback = SpriteCB_PlayerMonFromBall;
+        PlayCry_ByMode(sprite->sSpeciesId, -25, CRY_MODE_NORMAL);
+    }
+}
+
 static void SpriteCB_TrainerThrowObject_Main(struct Sprite *sprite)
 {
     AnimSetCenterToCornerVecX(sprite);
@@ -5848,16 +5871,23 @@ static void TryEvolvePokemon(void)
             {
                 u16 species;
                 u8 levelUpBits = gLeveledUpInBattle;
+                bool32 evoModeNormal = TRUE;
 
                 levelUpBits &= ~(gBitTable[i]);
                 gLeveledUpInBattle = levelUpBits;
 
-                species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_NORMAL, levelUpBits, NULL);
+                species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_NORMAL, ITEM_NONE, NULL);
+                if (species == SPECIES_NONE)
+                {
+                    species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_CANT_STOP, ITEM_NONE, NULL);
+                    evoModeNormal = FALSE;
+                }
+
                 if (species != SPECIES_NONE)
                 {
                     FreeAllWindowBuffers();
                     gBattleMainFunc = WaitForEvoSceneToFinish;
-                    EvolutionScene(&gPlayerParty[i], species, TRUE, i);
+                    EvolutionScene(&gPlayerParty[i], species, evoModeNormal, i);
                     return;
                 }
             }

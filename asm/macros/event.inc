@@ -1813,6 +1813,12 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
+	@ Like callnative, but function expects a ctx
+	.macro callfunc func:req
+	.byte 0xe5
+	.4byte \func
+	.endm
+
 
 @ Supplementary
 
