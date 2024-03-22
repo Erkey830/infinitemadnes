@@ -52,6 +52,7 @@
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "day_night.h"
 
 // this file was known as evobjmv.c in Game Freak's original source
 
@@ -1879,7 +1880,7 @@ static u8 LoadDynamicFollowerPalette(u16 species, u8 form, bool32 shiny)
             LZ77UnCompWram((u32*)spritePalette.data, gDecompressionBuffer);
             spritePalette.data = (void*)gDecompressionBuffer;
         }
-        paletteNum = LoadSpritePalette(&spritePalette);
+        paletteNum = LoadSpritePaletteDayNight(&spritePalette);
     }
     else
     {
@@ -2584,7 +2585,7 @@ static u8 UpdateSpritePalette(const struct SpritePalette * spritePalette, struct
     sprite->inUse = FALSE;
     FieldEffectFreePaletteIfUnused(sprite->oam.paletteNum);
     sprite->inUse = TRUE;
-    return sprite->oam.paletteNum = LoadSpritePalette(spritePalette);
+    return sprite->oam.paletteNum = LoadSpritePaletteDayNight(spritePalette);
 }
 
 // Find and update based on template's paletteTag
@@ -2852,12 +2853,13 @@ static void UNUSED LoadObjectEventPaletteSet(u16 *paletteTags)
         LoadObjectEventPalette(paletteTags[i]);
 }
 
+// NOTE: Does not use LoadSpritePaletteDayNight because of naming screen
 static u8 LoadSpritePaletteIfTagExists(const struct SpritePalette *spritePalette)
 {
     u8 paletteNum = IndexOfSpritePaletteTag(spritePalette->tag);
     if (paletteNum != 0xFF) // don't load twice; return
         return paletteNum;
-    paletteNum = LoadSpritePalette(spritePalette);
+    paletteNum = LoadSpritePaletteDayNight(spritePalette);
     return paletteNum;
 }
 
@@ -2866,7 +2868,7 @@ void PatchObjectPalette(u16 paletteTag, u8 paletteSlot)
     // paletteTag is assumed to exist in sObjectEventSpritePalettes
     u8 paletteIndex = FindObjectEventPaletteIndexByTag(paletteTag);
 
-    LoadPalette(sObjectEventSpritePalettes[paletteIndex].data, OBJ_PLTT_ID(paletteSlot), PLTT_SIZE_4BPP);
+    LoadPaletteDayNight(sObjectEventSpritePalettes[paletteIndex].data, OBJ_PLTT_ID(paletteSlot), PLTT_SIZE_4BPP);
 }
 
 void PatchObjectPaletteRange(const u16 *paletteTags, u8 minSlot, u8 maxSlot)
