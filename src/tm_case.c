@@ -310,7 +310,6 @@ void InitTMCase(u8 type, void (* exitCallback)(void), bool8 allowSelectClose)
         sTMCaseStaticResources.allowSelectClose = allowSelectClose;
     gTextFlags.autoScroll = FALSE;
     SetMainCallback2(CB2_SetUpTMCaseUI_Blocking);
-    PlayNewMapMusic(MUS_DP_TV_STATION);
 }
 
 static void CB2_Idle(void)
