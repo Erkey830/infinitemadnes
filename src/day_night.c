@@ -285,3 +285,13 @@ void LoadPalette_HandleDayNight(const void *src, u16 offset, u16 size, bool32 is
         CpuCopy16(src, &gPlttBufferFaded[offset], size);
     }
 }
+
+void LoadCompressedSpritePaletteDayNight(const struct CompressedSpritePalette *src)
+{
+    struct SpritePalette dest;
+
+    LZ77UnCompWram(src->data, gDecompressionBuffer);
+    dest.data = (void *) gDecompressionBuffer;
+    dest.tag = src->tag;
+    LoadSpritePaletteDayNight(&dest);
+}

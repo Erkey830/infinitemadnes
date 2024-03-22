@@ -104,7 +104,7 @@ void LoadCompressedSpritePaletteWithTag(const u32 *pal, u16 tag)
     LZ77UnCompWram(pal, gDecompressionBuffer);
     dest.data = (void *) gDecompressionBuffer;
     dest.tag = tag;
-    LoadSpritePalette(&dest);
+    LoadSpritePaletteDayNight(&dest);
 }
 
 void LoadCompressedSpritePaletteOverrideBuffer(const struct CompressedSpritePalette *src, void *buffer)

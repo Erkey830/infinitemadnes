@@ -22,4 +22,5 @@ void ProcessImmediateTimeEvents(void);
 void LoadCompressedPalette_HandleDayNight(const u32 *src, u16 offset, u16 size, bool32 isDayNight);
 void LoadPalette_HandleDayNight(const void *src, u16 offset, u16 size, bool32 isDayNight);
 
+
 #endif // GUARD_DAY_NIGHT_H
