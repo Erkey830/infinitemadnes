@@ -98,6 +98,7 @@ EWRAM_DATA static u8 (*sSaveDialogCallback)(void) = NULL;
 EWRAM_DATA static u8 sSaveDialogTimer = 0;
 EWRAM_DATA static bool8 sSavingComplete = FALSE;
 EWRAM_DATA static u8 sSaveInfoWindowId = 0;
+static EWRAM_DATA u8 sStartMenuSpritesId[9]= {};
 
 // Menu action callbacks
 static bool8 StartMenuPokedexCallback(void);
@@ -262,7 +263,7 @@ static void BuildMultiPartnerRoomStartMenu(void);
 static void ShowSafariBallsWindow(void);
 static void ShowPyramidFloorWindow(void);
 static void RemoveExtraStartMenuWindows(void);
-static bool32 PrintStartMenuActions(s8 *pIndex, u32 count);
+//static bool32 PrintStartMenuActions(s8 *pIndex, u32 count);
 static bool32 InitStartMenuStep(void);
 static void InitStartMenu(void);
 static void CreateStartMenuTask(TaskFunc followupFunc);
@@ -280,7 +281,7 @@ static bool32 InitSaveWindowAfterLinkBattle(u8 *par1);
 static void CB2_SaveAfterLinkBattle(void);
 static void ShowSaveInfoWindow(void);
 static void RemoveSaveInfoWindow(void);
-static void HideStartMenuWindow(void);
+//static void HideStartMenuWindow(void);
 static void HideStartMenuDebug(void);
 
 void SetDexPokemonPokenavFlags(void) // unused
@@ -639,6 +640,7 @@ static void MoveSelectSpriteIcon()
     else
         gSprites[sStartMenuSpritesId[sStartMenuCursorPos]].y -= 20;
 }
+
 void LoadSpriteIconMenu()
 {
     s8 i;
@@ -708,7 +710,7 @@ static bool32 InitStartMenuStep(void)
         sInitStartMenuData[0]++;
         break;
     case 4:
-        if (PrintStartMenuActions(&sInitStartMenuData[1], 2))
+        //if (PrintStartMenuActions(&sInitStartMenuData[1], 2))
             sInitStartMenuData[0]++;
         break;
     case 5:
@@ -1648,8 +1650,9 @@ void SaveForBattleTowerLink(void)
 
 static void HideStartMenuWindow(void)
 {
-    ClearStdWindowAndFrame(GetStartMenuWindowId(), TRUE);
-    RemoveStartMenuWindow();
+    // ClearStdWindowAndFrame(GetStartMenuWindowId(), TRUE);
+    // RemoveStartMenuWindow();
+    DestroySpriteIconsMenu();
     ScriptUnfreezeObjectEvents();
     UnlockPlayerFieldControls();
 }
