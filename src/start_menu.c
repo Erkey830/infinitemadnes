@@ -533,8 +533,6 @@ static bool32 InitStartMenuStep(void)
     case 3:
         if (GetSafariZoneFlag())
             ShowSafariBallsWindow();
-        else
-            ShowStartMenuExtraWindow();
         if (InBattlePyramid())
             ShowPyramidFloorWindow();
         sInitStartMenuData[0]++;
@@ -1502,14 +1500,4 @@ static bool8 StartMenuDexNavCallback(void)
 {
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
     return TRUE;
-}
-
-static void ShowStartMenuExtraWindow(void) // Función que carga una ventana auxiliar en el menú de pausa. 10/04/2023
-{   
-    sSafariBallsWindowId = AddWindow(&sStartMenuWindowTemplate);
-    PutWindowTilemap(sSafariBallsWindowId);
-    DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
-    FormatDecimalTimeWOSeconds(gStringVar4, Rtc_GetCurrentHour(), Rtc_GetCurrentMinute());                                     
-    AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
-    CopyWindowToVram(sSafariBallsWindowId, 3);
 }
