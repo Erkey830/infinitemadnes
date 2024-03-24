@@ -562,6 +562,7 @@ static const union AnimCmd sAnimDex[] = //cambiar de
 };
 
 
+
 static const union AnimCmd sAnimBall[] =
 {
     ANIMCMD_FRAME(16, 0),
