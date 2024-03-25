@@ -739,7 +739,7 @@ static void PrintTextToBottomBar(u8 textId)
     u8 strArray[16];
     u8 strArray2[4];
 
-    const u8 *str;
+    const u8 *str = 0;
     const u8 * str2;
     u8 x = 1 + 4;
     u8 y = 1 + 16 + 2;
