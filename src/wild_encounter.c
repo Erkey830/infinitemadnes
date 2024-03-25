@@ -312,6 +312,8 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIn
     u8 curvedLevel;
     u8 curveAmount;
 
+    curveAmount = 0;
+
     if (LURE_STEP_COUNT == 0)
     {
         // Make sure minimum level is less than maximum level

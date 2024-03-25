@@ -4631,6 +4631,11 @@ u8 GetPartyMonCurvedLevel(void)
     u8 adjustedLevel, currentLevel, monCount, partyMon, badgeModifier, firstMon;
     u16 i, totalLevel;
 
+    monCount = 0;
+    firstMon = 0;
+    totalLevel = 0;
+    badgeModifier = 0;
+
     for (i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
     {
         if (FlagGet(i))
