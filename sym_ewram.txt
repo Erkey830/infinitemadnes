@@ -156,3 +156,4 @@
 	.include "src/dexnav.o"
 	.include "src/tm_case.o"
 	.include "src/day_night.o"
+	.include "src/ui_birch_case.o"
