@@ -225,6 +225,7 @@ static const u8 sText_Electrified[] = _("Electrified");
 static const u8 sText_AuroraVeil[] = _("Aurora Veil");
 static const u8 sText_LuckyChant[] = _("Lucky Chant");
 static const u8 sText_Tailwind[] = _("Tailwind");
+static const u8 sText_PP[] = _("PP");
 static const u8 sText_StealthRock[] = _("Stealth Rock");
 static const u8 sText_ToxicSpikes[] = _("Toxic Spikes");
 static const u8 sText_StickyWeb[] = _("Sticky Web");
@@ -341,7 +342,7 @@ static const struct ListMenuItem sMainListItems[] =
     {sText_Moves, LIST_ITEM_MOVES},
     {sText_Ability, LIST_ITEM_ABILITY},
     {sText_HeldItem, LIST_ITEM_HELD_ITEM},
-    {gText_PP, LIST_ITEM_PP},
+    {sText_PP, LIST_ITEM_PP},
     {sText_Types, LIST_ITEM_TYPES},
     {sText_Stats, LIST_ITEM_STATS},
     {sText_StatStages, LIST_ITEM_STAT_STAGES},

@@ -11075,16 +11075,16 @@ const struct Item gItemsInfo[] =
 
     [ITEM_TM_CASE] =
     {
-        .name = _("Máquina de discos"),
+        .name = _("TM Case"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Máquina que contiene\n"
-            "todos los discos para\n"
-            "enseñar ataques."),
+            "A convenient case\n"
+            "that holds TMs and\n"
+            "HMs."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = FieldUseFunc_TmCase,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
     [ITEM_BERRY_POUCH] =

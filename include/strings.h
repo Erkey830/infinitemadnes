@@ -3063,21 +3063,4 @@ extern const u8 gText_BasePointsResetToZero[];
 extern const u8 gText_Fertilize[];
 extern const u8 gText_PlantBerry[];
 
-// Máquina de discos
-extern const u8 gText_PP[];
-extern const u8 gText_TMCase[];
-extern const u8 gText_Close[];
-extern const u8 gText_TMCaseWillBePutAway[];
-extern const u8 gText_FontSmall[];
-extern const u8 gText_FontNormal[];
-extern const u8 gText_FontBig[];
-extern const u8 gText_Use[];
-extern const u8 gText_MT[];
-extern const u8 gText_MO[];
-extern const u8 gText_Pot[];
-extern const u8 gText_Pre[];
-extern const u8 gText_Pri[];
-extern const u8 gText_UpArrow[];
-extern const u8 gText_DownArrow[];
-
 #endif // GUARD_STRINGS_H

@@ -62,7 +62,6 @@
 #include "task.h"
 #include "text.h"
 #include "text_window.h"
-#include "tm_case.h"
 #include "trade.h"
 #include "union_room.h"
 #include "window.h"
@@ -510,7 +509,6 @@ static bool8 SetUpFieldMove_Dive(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
-static void CB2_ReturnToTMCaseMenu(void);
 
 // static const data
 #include "data/party_menu.h"
@@ -3044,7 +3042,7 @@ static void Task_HandleSelectionMenuInput(u8 taskId)
         s16 *data = gTasks[taskId].data;
 
         if (sPartyMenuInternal->numActions <= 3)
-            input = Menu_ProcessInputNoWrapAround();
+            input = Menu_ProcessInputNoWrapAround_other();
         else
             input = ProcessMenuInput_other();
 
@@ -4588,10 +4586,7 @@ void CB2_ShowPartyMenuForItemUse(void)
     else
     {
         if (GetPocketByItemId(gSpecialVar_ItemId) == POCKET_TM_HM)
-        {
             msgId = PARTY_MSG_TEACH_WHICH_MON;
-            callback = CB2_ReturnToTMCaseMenu;
-        }
         else
             msgId = PARTY_MSG_USE_ON_WHICH_MON;
 
@@ -7898,43 +7893,4 @@ void IsLastMonThatKnowsSurf(void)
         if (AnyStorageMonWithMove(move) != TRUE)
             gSpecialVar_Result = TRUE;
     }
-}
-
-static void CB2_OpenTMCaseOnField(void)
-{
-    InitTMCase(0, CB2_BagMenuFromStartMenu, 0);
-}
-
-void CB2_ShowPartyMenuForItemUseTMCase(void)
-{
-    MainCallback callback = CB2_OpenTMCaseOnField;
-    u8 partyLayout;
-    u8 menuType;
-    u8 msgId;
-    TaskFunc task;
-
-    if (gMain.inBattle)
-    {
-        menuType = PARTY_MENU_TYPE_IN_BATTLE;
-        partyLayout = GetPartyLayoutFromBattleType();
-    }
-    else
-    {
-        menuType = PARTY_MENU_TYPE_FIELD;
-        partyLayout = PARTY_LAYOUT_SINGLE;
-    }
-
-    if (GetPocketByItemId(gSpecialVar_ItemId) == POCKET_TM_HM)
-        msgId = PARTY_MSG_TEACH_WHICH_MON;
-    else
-        msgId = PARTY_MSG_USE_ON_WHICH_MON;
-
-    task = Task_HandleChooseMonInput;
-
-    InitPartyMenu(menuType, partyLayout, PARTY_ACTION_USE_ITEM, TRUE, msgId, task, callback);
-}
-
-static void CB2_ReturnToTMCaseMenu(void)
-{
-    InitTMCase(TMCASE_REOPENING, NULL, TMCASE_KEEP_PREV);
 }
