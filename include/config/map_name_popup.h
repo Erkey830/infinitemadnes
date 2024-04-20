@@ -16,8 +16,8 @@
 
 // Configuration
 #define MAP_POPUP_BW_COLOR          MAP_POPUP_BW_COLOR_BLACK    // Black 2 and White 2 use different colors for their map pop-ups           
-#define MAP_POPUP_BW_TIME_MODE      MAP_POPUP_BW_TIME_NONE      // determines what type of time is shown
-#define MAP_POPUP_BW_ALPHA_BLEND    FALSE                       // enables alpha blending/transparency for the pop-ups
+#define MAP_POPUP_BW_TIME_MODE      MAP_POPUP_BW_TIME_24_HR      // determines what type of time is shown
+#define MAP_POPUP_BW_ALPHA_BLEND    TRUE                       // enables alpha blending/transparency for the pop-ups
                                                                 // mostly intended to be used with the black color option
 
 #endif // GUARD_CONFIG_MAP_POPUP_H
