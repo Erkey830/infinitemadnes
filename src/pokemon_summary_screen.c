@@ -575,7 +575,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
 };
 static const struct WindowTemplate sPageInfoTemplate[] =
 {
-    [PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER] = {
+    [PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER] = { //TrainerName
         .bg = 0,
         .tilemapLeft = 11,
         .tilemapTop = 4,
@@ -584,7 +584,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .paletteNum = 6,
         .baseBlock = 451,
     },
-    [PSS_DATA_WINDOW_INFO_ID] = {
+    [PSS_DATA_WINDOW_INFO_ID] = { //IDno.
         .bg = 0,
         .tilemapLeft = 22,
         .tilemapTop = 4,
@@ -593,7 +593,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .paletteNum = 6,
         .baseBlock = 473,
     },
-    [PSS_DATA_WINDOW_INFO_ABILITY] = {
+    [PSS_DATA_WINDOW_INFO_ABILITY] = { //Habilidad nombre y descripcion
         .bg = 0,
         .tilemapLeft = 11,
         .tilemapTop = 9,
@@ -602,7 +602,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .paletteNum = 6,
         .baseBlock = 487,
     },
-    [PSS_DATA_WINDOW_INFO_MEMO] = {
+    [PSS_DATA_WINDOW_INFO_MEMO] = { //Trainermemo naturaleza y etc...
         .bg = 0,
         .tilemapLeft = 11,
         .tilemapTop = 14,
