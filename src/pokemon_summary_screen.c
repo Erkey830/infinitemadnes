@@ -517,7 +517,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .paletteNum = 6,
         .baseBlock = 319,
     },
-    [PSS_LABEL_WINDOW_MOVES_POWER_ACC] = {
+    [PSS_LABEL_WINDOW_MOVES_POWER_ACC] = { //power acuracy y demas
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 15,
