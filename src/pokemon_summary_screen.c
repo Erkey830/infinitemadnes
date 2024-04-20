@@ -49,6 +49,7 @@
 #include "constants/region_map_sections.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "pokemon_icon.h"
 
 enum {
     PSS_PAGE_INFO,
@@ -115,6 +116,7 @@ enum {
 enum
 {
     SPRITE_ARR_ID_MON,
+    SPRITE_ARR_ID_ICON_MON,
     SPRITE_ARR_ID_BALL,
     SPRITE_ARR_ID_STATUS,
     SPRITE_ARR_ID_TYPE, // 2 for mon types, 5 for move types(4 moves and 1 to learn), used interchangeably, because mon types and move types aren't shown on the same screen
@@ -3972,10 +3974,11 @@ static void SetNewMoveTypeIcon(void)
     }
     else
     {
-        if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
+        if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES){
             SetTypeSpritePosAndPal(gMovesInfo[sMonSummaryScreen->newMove].type, 85, 96, SPRITE_ARR_ID_TYPE + 4);
-        else
+            }else{
             SetTypeSpritePosAndPal(NUMBER_OF_MON_TYPES + gMovesInfo[sMonSummaryScreen->newMove].contestCategory, 85, 96, SPRITE_ARR_ID_TYPE + 4);
+        }       
     }
 }
 
@@ -4185,12 +4188,17 @@ static void CreateMoveSelectorSprites(u8 idArrayStart)
     if (sMonSummaryScreen->currPageIndex >= PSS_PAGE_BATTLE_MOVES)
     {
         u8 subpriority = 0;
+        u8 i = sMonSummaryScreen->curMonIndex;
+        LoadMonIconPalettes();
+        sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_ICON_MON] = CreateMonIcon(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG), SpriteCB_MonIcon, 30, 30, 0, GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY));
+
         if (idArrayStart == SPRITE_ARR_ID_MOVE_SELECTOR1)
             subpriority = 1;
 
         for (i = 0; i < MOVE_SELECTOR_SPRITES_COUNT; i++)
         {
             spriteIds[i] = CreateSprite(&sMoveSelectorSpriteTemplate, i * 16 + 89, 40, subpriority);
+            gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]].invisible = TRUE;
             if (i == 0)
                 StartSpriteAnim(&gSprites[spriteIds[i]], 4); // left
             else if (i == 9)
@@ -4230,6 +4238,8 @@ static void SpriteCB_MoveSelector(struct Sprite *sprite)
 static void DestroyMoveSelectorSprites(u8 firstArrayId)
 {
     u8 i;
+    gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]].invisible = FALSE;
+    DestroySprite(&gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_ICON_MON]]);
     for (i = 0; i < MOVE_SELECTOR_SPRITES_COUNT; i++)
         DestroySpriteInArray(firstArrayId + i);
 }
