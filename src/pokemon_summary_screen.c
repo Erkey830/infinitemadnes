@@ -472,7 +472,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .paletteNum = 6,
         .baseBlock = 137,
     },
-    [PSS_LABEL_WINDOW_POKEMON_INFO_TYPE] = {
+    [PSS_LABEL_WINDOW_POKEMON_INFO_TYPE] = { //palabra type
         .bg = 0,
         .tilemapLeft = 11,
         .tilemapTop = 6,
@@ -544,7 +544,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .paletteNum = 6,
         .baseBlock = 387,
     },
-    [PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER] = {
+    [PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER] = { //Nº pokedex
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 2,
@@ -553,7 +553,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .paletteNum = 7,
         .baseBlock = 387,
     },
-    [PSS_LABEL_WINDOW_PORTRAIT_NICKNAME] = {
+    [PSS_LABEL_WINDOW_PORTRAIT_NICKNAME] = { //nickname
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 12,
@@ -562,7 +562,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .paletteNum = 6,
         .baseBlock = 397,
     },
-    [PSS_LABEL_WINDOW_PORTRAIT_SPECIES] = {
+    [PSS_LABEL_WINDOW_PORTRAIT_SPECIES] = { //nombre y nivel
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 14,
@@ -3919,10 +3919,10 @@ static void SetMonTypeIcons(void)
     }
     else
     {
-        SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[0], 120, 48, SPRITE_ARR_ID_TYPE);
+        SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[0], 120, 48, SPRITE_ARR_ID_TYPE); //sprite tipo 1
         if (gSpeciesInfo[summary->species].types[0] != gSpeciesInfo[summary->species].types[1])
         {
-            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[1], 160, 48, SPRITE_ARR_ID_TYPE + 1);
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[1], 160, 48, SPRITE_ARR_ID_TYPE + 1);//sprite tipo 2
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, FALSE);
         }
         else
@@ -3931,7 +3931,7 @@ static void SetMonTypeIcons(void)
         }
         if (P_SHOW_TERA_TYPE >= GEN_9)
         {
-            SetTypeSpritePosAndPal(summary->teraType, 200, 48, SPRITE_ARR_ID_TYPE + 2);
+            SetTypeSpritePosAndPal(summary->teraType, 200, 48, SPRITE_ARR_ID_TYPE + 2);  //sprite teratipo
         }
     }
 }
@@ -4056,7 +4056,7 @@ static void PlayMonCry(void)
 static u8 CreateMonSprite(struct Pokemon *unused)
 {
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
-    u8 spriteId = CreateSprite(&gMultiuseSpriteTemplate, 40, 64, 5);
+    u8 spriteId = CreateSprite(&gMultiuseSpriteTemplate, 40, 64, 5); //cargar el sprite en la summary 130. 80. es el medio mas o menos
 
     FreeSpriteOamMatrix(&gSprites[spriteId]);
     gSprites[spriteId].data[0] = summary->species2;
