@@ -61,7 +61,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonShinyPalette_VenusaurMega[] = INCBIN_U32("graphics/pokemon/venusaur/mega/shiny.gbapal.lz");
     const u8 gMonIcon_VenusaurMega[] = INCBIN_U8("graphics/pokemon/venusaur/mega/icon.4bpp");
 #if OW_FOLLOWERS_ENABLED
-    // const u32 gObjectEventPic_VenusaurMega[] = INCBIN_COMP("graphics/pokemon/venusaur/mega/follower.4bpp");
+    const u32 gObjectEventPic_VenusaurMega[] = INCBIN_COMP("graphics/pokemon/venusaur/mega/follower.4bpp");
 #endif //OW_FOLLOWERS_ENABLED
 #endif //P_MEGA_EVOLUTIONS
 
@@ -72,7 +72,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonShinyPalette_VenusaurGigantamax[] = INCBIN_U32("graphics/pokemon/venusaur/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_VenusaurGigantamax[] = INCBIN_U8("graphics/pokemon/venusaur/gigantamax/icon.4bpp");
 #if OW_FOLLOWERS_ENABLED
-    // const u32 gObjectEventPic_VenusaurGigantamax[] = INCBIN_COMP("graphics/pokemon/venusaur/gigantamax/follower.4bpp");
+    const u32 gObjectEventPic_VenusaurGigantamax[] = INCBIN_COMP("graphics/pokemon/venusaur/gigantamax/follower.4bpp");
 #endif //OW_FOLLOWERS_ENABLED
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_BULBASAUR

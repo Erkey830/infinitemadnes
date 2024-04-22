@@ -228,6 +228,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_VenusaurMega,
         .iconPalIndex = 4,
         FOOTPRINT(Venusaur)
+        FOLLOWER(VenusaurMega, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sVenusaurLevelUpLearnset,
         .teachableLearnset = sVenusaurTeachableLearnset,
@@ -286,6 +287,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_VenusaurGigantamax,
         .iconPalIndex = 0,
         FOOTPRINT(Venusaur)
+        FOLLOWER(VenusaurGigantamax, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isGigantamax = TRUE,
         .levelUpLearnset = sVenusaurLevelUpLearnset,
         .teachableLearnset = sVenusaurTeachableLearnset,

@@ -14,14 +14,14 @@ static const struct SpriteFrameImage sPicTable_Venusaur[] = {
     overworld_ascending_frames(gObjectEventPic_Venusaur, 4, 4),
 };
 #if P_MEGA_EVOLUTIONS
-/*static const struct SpriteFrameImage sPicTable_VenusaurMega[] = {
+static const struct SpriteFrameImage sPicTable_VenusaurMega[] = {
     overworld_ascending_frames(gObjectEventPic_VenusaurMega, 4, 4),
-};*/
+};
 #endif //P_MEGA_EVOLUTIONS
 #if P_GIGANTAMAX_FORMS
-/*static const struct SpriteFrameImage sPicTable_VenusaurGigantamax[] = {
+static const struct SpriteFrameImage sPicTable_VenusaurGigantamax[] = {
     overworld_ascending_frames(gObjectEventPic_VenusaurGigantamax, 4, 4),
-};*/
+};
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_BULBASAUR
 
