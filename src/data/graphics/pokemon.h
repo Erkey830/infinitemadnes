@@ -121,7 +121,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonShinyPalette_CharizardMegaX[] = INCBIN_U32("graphics/pokemon/charizard/mega_x/shiny.gbapal.lz");
     const u8 gMonIcon_CharizardMegaX[] = INCBIN_U8("graphics/pokemon/charizard/mega_x/icon.4bpp");
 #if OW_FOLLOWERS_ENABLED
-    // const u32 gObjectEventPic_CharizardMegaX[] = INCBIN_COMP("graphics/pokemon/charizard/mega_x/follower.4bpp");
+    const u32 gObjectEventPic_CharizardMegaX[] = INCBIN_COMP("graphics/pokemon/charizard/mega_x/follower.4bpp");
 #endif //OW_FOLLOWERS_ENABLED
 
     const u32 gMonFrontPic_CharizardMegaY[] = INCBIN_U32("graphics/pokemon/charizard/mega_y/front.4bpp.lz");

@@ -36,9 +36,10 @@ static const struct SpriteFrameImage sPicTable_Charizard[] = {
     overworld_ascending_frames(gObjectEventPic_Charizard, 4, 4),
 };
 #if P_MEGA_EVOLUTIONS
-/*static const struct SpriteFrameImage sPicTable_CharizardMegaX[] = {
+static const struct SpriteFrameImage sPicTable_CharizardMegaX[] = {
     overworld_ascending_frames(gObjectEventPic_CharizardMegaX, 4, 4),
 };
+/*
 static const struct SpriteFrameImage sPicTable_CharizardMegaY[] = {
     overworld_ascending_frames(gObjectEventPic_CharizardMegaY, 4, 4),
 };*/

@@ -516,6 +516,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_CharizardMegaX,
         .iconPalIndex = 0,
         FOOTPRINT(Charizard)
+        FOLLOWER(CharizardMegaX, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sCharizardLevelUpLearnset,
         .teachableLearnset = sCharizardTeachableLearnset,

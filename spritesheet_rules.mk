@@ -3996,6 +3996,9 @@ $(POKEMONGFXDIR)/venusaur/mega/follower.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/venusaur/gigantamax/follower.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(POKEMONGFXDIR)/charizard/mega_x/follower.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 $(MISCGFXDIR)/emotes.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
