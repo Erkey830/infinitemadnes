@@ -5895,7 +5895,16 @@ static void TryEvolvePokemon(void)
                 gLeveledUpInBattle &= ~(gBitTable[i]);
                 species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_NORMAL, gLeveledUpInBattle, NULL);
             }
+
+            if (species != SPECIES_NONE)
+            {
+<<<<<<< HEAD
+                u16 species;
+                u8 levelUpBits = gLeveledUpInBattle;
                 bool32 evoModeNormal = TRUE;
+
+                levelUpBits &= ~(gBitTable[i]);
+                gLeveledUpInBattle = levelUpBits;
 
                 species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_NORMAL, ITEM_NONE, NULL);
                 if (species == SPECIES_NONE)
@@ -5904,12 +5913,19 @@ static void TryEvolvePokemon(void)
                     evoModeNormal = FALSE;
                 }
 
-            if (species != SPECIES_NONE)
-            {
+                if (species != SPECIES_NONE)
+                {
+                    FreeAllWindowBuffers();
+                    gBattleMainFunc = WaitForEvoSceneToFinish;
+                    EvolutionScene(&gPlayerParty[i], species, evoModeNormal, i);
+                    return;
+                }
+=======
                 FreeAllWindowBuffers();
                 gBattleMainFunc = WaitForEvoSceneToFinish;
-                    EvolutionScene(&gPlayerParty[i], species, evoModeNormal, i);
+                EvolutionScene(&gPlayerParty[i], species, TRUE, i);
                 return;
+>>>>>>> 6f12da0a67 (Fix special evolution triggering twice in certain situations (#4553))
             }
         }
     }
