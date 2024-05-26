@@ -24,7 +24,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Turtwig"),
-        .cryId = CRY_NONE,    //TURTWIG,
+        .cryId = CRY_TURTWIG,
         .natDexNum = NATIONAL_DEX_TURTWIG,
         .categoryName = _("Tiny Leaf"),
         .height = 4,
@@ -52,7 +52,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Turtwig,
         .iconPalIndex = 1,
         FOOTPRINT(Turtwig)
-        FOLLOWER(Turtwig, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sTurtwigLevelUpLearnset,
         .teachableLearnset = sTurtwigTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_GROTLE}),
@@ -79,7 +78,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Grotle"),
-        .cryId = CRY_NONE,    //GROTLE,
+        .cryId = CRY_GROTLE,
         .natDexNum = NATIONAL_DEX_GROTLE,
         .categoryName = _("Grove"),
         .height = 11,
@@ -107,7 +106,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Grotle,
         .iconPalIndex = 1,
         FOOTPRINT(Grotle)
-        FOLLOWER(Grotle, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGrotleLevelUpLearnset,
         .teachableLearnset = sGrotleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_TORTERRA}),
@@ -141,7 +139,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Torterra"),
-        .cryId = CRY_NONE,    //TORTERRA,
+        .cryId = CRY_TORTERRA,
         .natDexNum = NATIONAL_DEX_TORTERRA,
         .categoryName = _("Continent"),
         .height = 22,
@@ -169,7 +167,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Torterra,
         .iconPalIndex = 1,
         FOOTPRINT(Torterra)
-        FOLLOWER(Torterra, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sTorterraLevelUpLearnset,
         .teachableLearnset = sTorterraTeachableLearnset,
     },
@@ -197,7 +194,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Chimchar"),
-        .cryId = CRY_NONE,    //CHIMCHAR,
+        .cryId = CRY_CHIMCHAR,
         .natDexNum = NATIONAL_DEX_CHIMCHAR,
         .categoryName = _("Chimp"),
         .height = 5,
@@ -225,7 +222,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Chimchar,
         .iconPalIndex = 1,
         FOOTPRINT(Chimchar)
-        FOLLOWER(Chimchar, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sChimcharLevelUpLearnset,
         .teachableLearnset = sChimcharTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_MONFERNO}),
@@ -253,7 +249,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Monferno"),
-        .cryId = CRY_NONE,    //MONFERNO,
+        .cryId = CRY_MONFERNO,
         .natDexNum = NATIONAL_DEX_MONFERNO,
         .categoryName = _("Playful"),
         .height = 9,
@@ -281,7 +277,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Monferno,
         .iconPalIndex = 0,
         FOOTPRINT(Monferno)
-        FOLLOWER(Monferno, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sMonfernoLevelUpLearnset,
         .teachableLearnset = sMonfernoTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INFERNAPE}),
@@ -315,7 +310,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Infernape"),
-        .cryId = CRY_NONE,    //INFERNAPE,
+        .cryId = CRY_INFERNAPE,
         .natDexNum = NATIONAL_DEX_INFERNAPE,
         .categoryName = _("Flame"),
         .height = 12,
@@ -343,7 +338,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Infernape,
         .iconPalIndex = 0,
         FOOTPRINT(Infernape)
-        FOLLOWER(Infernape, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sInfernapeLevelUpLearnset,
         .teachableLearnset = sInfernapeTeachableLearnset,
     },
@@ -374,7 +368,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     #endif
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Piplup"),
-        .cryId = CRY_NONE,    //PIPLUP,
+        .cryId = CRY_PIPLUP,
         .natDexNum = NATIONAL_DEX_PIPLUP,
         .categoryName = _("Penguin"),
         .height = 4,
@@ -402,7 +396,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Piplup,
         .iconPalIndex = 0,
         FOOTPRINT(Piplup)
-        FOLLOWER(Piplup, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sPiplupLevelUpLearnset,
         .teachableLearnset = sPiplupTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PRINPLUP}),
@@ -432,7 +425,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     #endif
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Prinplup"),
-        .cryId = CRY_NONE,    //PRINPLUP,
+        .cryId = CRY_PRINPLUP,
         .natDexNum = NATIONAL_DEX_PRINPLUP,
         .categoryName = _("Penguin"),
         .height = 8,
@@ -460,7 +453,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Prinplup,
         .iconPalIndex = 0,
         FOOTPRINT(Prinplup)
-        FOLLOWER(Prinplup, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sPrinplupLevelUpLearnset,
         .teachableLearnset = sPrinplupTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EMPOLEON}),
@@ -496,7 +488,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     #endif
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Empoleon"),
-        .cryId = CRY_NONE,    //EMPOLEON,
+        .cryId = CRY_EMPOLEON,
         .natDexNum = NATIONAL_DEX_EMPOLEON,
         .categoryName = _("Emperor"),
         .height = 17,
@@ -524,7 +516,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Empoleon,
         .iconPalIndex = 0,
         FOOTPRINT(Empoleon)
-        FOLLOWER(Empoleon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sEmpoleonLevelUpLearnset,
         .teachableLearnset = sEmpoleonTeachableLearnset,
     },
@@ -551,7 +542,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_RECKLESS },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Starly"),
-        .cryId = CRY_NONE,    //STARLY,
+        .cryId = CRY_STARLY,
         .natDexNum = NATIONAL_DEX_STARLY,
         .categoryName = _("Starling"),
         .height = 3,
@@ -583,7 +574,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Starly,
         .iconPalIndex = 0,
         FOOTPRINT(Starly)
-        FOLLOWER(Starly, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sStarlyLevelUpLearnset,
         .teachableLearnset = sStarlyTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STARAVIA}),
@@ -609,7 +599,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_RECKLESS },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Staravia"),
-        .cryId = CRY_NONE,    //STARAVIA,
+        .cryId = CRY_STARAVIA,
         .natDexNum = NATIONAL_DEX_STARAVIA,
         .categoryName = _("Starling"),
         .height = 6,
@@ -641,7 +631,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Staravia,
         .iconPalIndex = 0,
         FOOTPRINT(Staravia)
-        FOLLOWER(Staravia, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sStaraviaLevelUpLearnset,
         .teachableLearnset = sStaraviaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_STARAPTOR}),
@@ -675,7 +664,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_RECKLESS },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Staraptor"),
-        .cryId = CRY_NONE,    //STARAPTOR,
+        .cryId = CRY_STARAPTOR,
         .natDexNum = NATIONAL_DEX_STARAPTOR,
         .categoryName = _("Predator"),
         .height = 12,
@@ -705,7 +694,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Staraptor,
         .iconPalIndex = 0,
         FOOTPRINT(Staraptor)
-        FOLLOWER(Staraptor, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
     },
@@ -732,7 +720,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SIMPLE, ABILITY_UNAWARE, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Bidoof"),
-        .cryId = CRY_NONE,    //BIDOOF,
+        .cryId = CRY_BIDOOF,
         .natDexNum = NATIONAL_DEX_BIDOOF,
         .categoryName = _("Plump Mouse"),
         .height = 5,
@@ -764,7 +752,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Bidoof,
         .iconPalIndex = 2,
         FOOTPRINT(Bidoof)
-        FOLLOWER(Bidoof, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBidoofLevelUpLearnset,
         .teachableLearnset = sBidoofTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_BIBAREL}),
@@ -790,7 +777,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SIMPLE, ABILITY_UNAWARE, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Bibarel"),
-        .cryId = CRY_NONE,    //BIBAREL,
+        .cryId = CRY_BIBAREL,
         .natDexNum = NATIONAL_DEX_BIBAREL,
         .categoryName = _("Beaver"),
         .height = 10,
@@ -820,7 +807,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Bibarel,
         .iconPalIndex = 2,
         FOOTPRINT(Bibarel)
-        FOLLOWER(Bibarel, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBibarelLevelUpLearnset,
         .teachableLearnset = sBibarelTeachableLearnset,
     },
@@ -848,7 +834,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Kricketot"),
-        .cryId = CRY_NONE,    //KRICKETOT,
+        .cryId = CRY_KRICKETOT,
         .natDexNum = NATIONAL_DEX_KRICKETOT,
         .categoryName = _("Cricket"),
         .height = 3,
@@ -880,7 +866,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Kricketot,
         .iconPalIndex = 2,
         FOOTPRINT(Kricketot)
-        FOLLOWER(Kricketot, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .tmIlliterate = TRUE,
         .levelUpLearnset = sKricketotLevelUpLearnset,
         .teachableLearnset = sKricketotTeachableLearnset,
@@ -908,7 +893,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Kricketune"),
-        .cryId = CRY_NONE,    //KRICKETUNE,
+        .cryId = CRY_KRICKETUNE,
         .natDexNum = NATIONAL_DEX_KRICKETUNE,
         .categoryName = _("Cricket"),
         .height = 10,
@@ -940,7 +925,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Kricketune,
         .iconPalIndex = 2,
         FOOTPRINT(Kricketune)
-        FOLLOWER(Kricketune, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sKricketuneLevelUpLearnset,
         .teachableLearnset = sKricketuneTeachableLearnset,
     },
@@ -967,7 +951,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Shinx"),
-        .cryId = CRY_NONE,    //SHINX,
+        .cryId = CRY_SHINX,
         .natDexNum = NATIONAL_DEX_SHINX,
         .categoryName = _("Flash"),
         .height = 5,
@@ -999,7 +983,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Shinx,
         .iconPalIndex = 0,
         FOOTPRINT(Shinx)
-        FOLLOWER(Shinx, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sShinxLevelUpLearnset,
         .teachableLearnset = sShinxTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LUXIO}),
@@ -1025,7 +1008,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Luxio"),
-        .cryId = CRY_NONE,    //LUXIO,
+        .cryId = CRY_LUXIO,
         .natDexNum = NATIONAL_DEX_LUXIO,
         .categoryName = _("Spark"),
         .height = 9,
@@ -1057,7 +1040,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Luxio,
         .iconPalIndex = 0,
         FOOTPRINT(Luxio)
-        FOLLOWER(Luxio, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sLuxioLevelUpLearnset,
         .teachableLearnset = sLuxioTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LUXRAY}),
@@ -1089,7 +1071,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Luxray"),
-        .cryId = CRY_NONE,    //LUXRAY,
+        .cryId = CRY_LUXRAY,
         .natDexNum = NATIONAL_DEX_LUXRAY,
         .categoryName = _("Gleam Eyes"),
         .height = 14,
@@ -1121,7 +1103,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Luxray,
         .iconPalIndex = 0,
         FOOTPRINT(Luxray)
-        FOLLOWER(Luxray, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sLuxrayLevelUpLearnset,
         .teachableLearnset = sLuxrayTeachableLearnset,
     },
@@ -1148,7 +1129,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Cranidos"),
-        .cryId = CRY_NONE,    //CRANIDOS,
+        .cryId = CRY_CRANIDOS,
         .natDexNum = NATIONAL_DEX_CRANIDOS,
         .categoryName = _("Head Butt"),
         .height = 9,
@@ -1176,7 +1157,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Cranidos,
         .iconPalIndex = 0,
         FOOTPRINT(Cranidos)
-        FOLLOWER(Cranidos, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sCranidosLevelUpLearnset,
         .teachableLearnset = sCranidosTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAMPARDOS}),
@@ -1202,7 +1182,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Rampardos"),
-        .cryId = CRY_NONE,    //RAMPARDOS,
+        .cryId = CRY_RAMPARDOS,
         .natDexNum = NATIONAL_DEX_RAMPARDOS,
         .categoryName = _("Head Butt"),
         .height = 16,
@@ -1230,7 +1210,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Rampardos,
         .iconPalIndex = 0,
         FOOTPRINT(Rampardos)
-        FOLLOWER(Rampardos, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRampardosLevelUpLearnset,
         .teachableLearnset = sRampardosTeachableLearnset,
     },
@@ -1257,7 +1236,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Shieldon"),
-        .cryId = CRY_NONE,    //SHIELDON,
+        .cryId = CRY_SHIELDON,
         .natDexNum = NATIONAL_DEX_SHIELDON,
         .categoryName = _("Shield"),
         .height = 5,
@@ -1285,7 +1264,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Shieldon,
         .iconPalIndex = 1,
         FOOTPRINT(Shieldon)
-        FOLLOWER(Shieldon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sShieldonLevelUpLearnset,
         .teachableLearnset = sShieldonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BASTIODON}),
@@ -1311,7 +1289,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Bastiodon"),
-        .cryId = CRY_NONE,    //BASTIODON,
+        .cryId = CRY_BASTIODON,
         .natDexNum = NATIONAL_DEX_BASTIODON,
         .categoryName = _("Shield"),
         .height = 13,
@@ -1339,7 +1317,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Bastiodon,
         .iconPalIndex = 1,
         FOOTPRINT(Bastiodon)
-        FOLLOWER(Bastiodon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBastiodonLevelUpLearnset,
         .teachableLearnset = sBastiodonTeachableLearnset,
     },
@@ -1366,7 +1343,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Burmy"),
-        .cryId = CRY_NONE,    //BURMY,
+        .cryId = CRY_BURMY,
         .natDexNum = NATIONAL_DEX_BURMY,
         .categoryName = _("Bagworm"),
         .height = 2,
@@ -1395,7 +1372,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_BurmyPlantCloak,
         .iconPalIndex = 1,
         FOOTPRINT(Burmy)
-        FOLLOWER(BurmyPlantCloak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .tmIlliterate = TRUE,
         .levelUpLearnset = sBurmyLevelUpLearnset,
         .teachableLearnset = sBurmyTeachableLearnset,
@@ -1425,7 +1401,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Burmy"),
-        .cryId = CRY_NONE,    //BURMY,
+        .cryId = CRY_BURMY,
         .natDexNum = NATIONAL_DEX_BURMY,
         .categoryName = _("Bagworm"),
         .height = 2,
@@ -1454,7 +1430,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_BurmySandyCloak,
         .iconPalIndex = 1,
         FOOTPRINT(Burmy)
-        FOLLOWER(BurmySandyCloak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .tmIlliterate = TRUE,
         .levelUpLearnset = sBurmyLevelUpLearnset,
         .teachableLearnset = sBurmyTeachableLearnset,
@@ -1484,7 +1459,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Burmy"),
-        .cryId = CRY_NONE,    //BURMY,
+        .cryId = CRY_BURMY,
         .natDexNum = NATIONAL_DEX_BURMY,
         .categoryName = _("Bagworm"),
         .height = 2,
@@ -1513,7 +1488,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_BurmyTrashCloak,
         .iconPalIndex = 0,
         FOOTPRINT(Burmy)
-        FOLLOWER(BurmyTrashCloak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .tmIlliterate = TRUE,
         .levelUpLearnset = sBurmyLevelUpLearnset,
         .teachableLearnset = sBurmyTeachableLearnset,
@@ -1544,7 +1518,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_ANTICIPATION, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Wormadam"),
-        .cryId = CRY_NONE,    //WORMADAM,
+        .cryId = CRY_WORMADAM,
         .natDexNum = NATIONAL_DEX_WORMADAM,
         .categoryName = _("Bagworm"),
         .height = 5,
@@ -1573,7 +1547,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_WormadamPlantCloak,
         .iconPalIndex = 1,
         FOOTPRINT(Wormadam)
-        FOLLOWER(WormadamPlantCloak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sWormadamPlantCloakLevelUpLearnset,
         .teachableLearnset = sWormadamPlantCloakTeachableLearnset,
         .formSpeciesIdTable = sWormadamFormSpeciesIdTable,
@@ -1600,7 +1573,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_ANTICIPATION, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Wormadam"),
-        .cryId = CRY_NONE,    //WORMADAM,
+        .cryId = CRY_WORMADAM,
         .natDexNum = NATIONAL_DEX_WORMADAM,
         .categoryName = _("Bagworm"),
         .height = 5,
@@ -1629,7 +1602,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_WormadamSandyCloak,
         .iconPalIndex = 1,
         FOOTPRINT(Wormadam)
-        FOLLOWER(WormadamSandyCloak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sWormadamSandyCloakLevelUpLearnset,
         .teachableLearnset = sWormadamSandyCloakTeachableLearnset,
         .formSpeciesIdTable = sWormadamFormSpeciesIdTable,
@@ -1657,7 +1629,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_ANTICIPATION, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Wormadam"),
-        .cryId = CRY_NONE,    //WORMADAM,
+        .cryId = CRY_WORMADAM,
         .natDexNum = NATIONAL_DEX_WORMADAM,
         .categoryName = _("Bagworm"),
         .height = 5,
@@ -1686,7 +1658,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_WormadamTrashCloak,
         .iconPalIndex = 0,
         FOOTPRINT(Wormadam)
-        FOLLOWER(WormadamTrashCloak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sWormadamTrashCloakLevelUpLearnset,
         .teachableLearnset = sWormadamTrashCloakTeachableLearnset,
         .formSpeciesIdTable = sWormadamFormSpeciesIdTable,
@@ -1714,7 +1685,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_TINTED_LENS },  \
         .bodyColor = BODY_COLOR_YELLOW,                                     \
         .speciesName = _("Mothim"),                                         \
-        .cryId = CRY_NONE,                                                  \
+        .cryId = CRY_MOTHIM,                                                \
         .natDexNum = NATIONAL_DEX_MOTHIM,                                   \
         .categoryName = _("Moth"),                                          \
         .height = 9,                                                        \
@@ -1739,7 +1710,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Mothim,                                      \
         .iconPalIndex = 0,                                                  \
         FOOTPRINT(Mothim)                                                   \
-        FOLLOWER(Mothim, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)            \
         .levelUpLearnset = sMothimLevelUpLearnset,                          \
         .teachableLearnset = sMothimTeachableLearnset,                      \
         .formSpeciesIdTable = sMothimFormSpeciesIdTable,                    \
@@ -1772,7 +1742,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_HONEY_GATHER, ABILITY_NONE, ABILITY_HUSTLE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Combee"),
-        .cryId = CRY_NONE,    //COMBEE,
+        .cryId = CRY_COMBEE,
         .natDexNum = NATIONAL_DEX_COMBEE,
         .categoryName = _("Tiny Bee"),
         .height = 3,
@@ -1803,7 +1773,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Combee,
         .iconPalIndex = 0,
         FOOTPRINT(Combee)
-        FOLLOWER(Combee, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCombeeLevelUpLearnset,
         .teachableLearnset = sCombeeTeachableLearnset,
@@ -1832,7 +1801,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Vespiquen"),
-        .cryId = CRY_NONE,    //VESPIQUEN,
+        .cryId = CRY_VESPIQUEN,
         .natDexNum = NATIONAL_DEX_VESPIQUEN,
         .categoryName = _("Beehive"),
         .height = 12,
@@ -1861,7 +1830,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Vespiquen,
         .iconPalIndex = 0,
         FOOTPRINT(Vespiquen)
-        FOLLOWER(Vespiquen, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sVespiquenLevelUpLearnset,
         .teachableLearnset = sVespiquenTeachableLearnset,
     },
@@ -1888,7 +1856,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_RUN_AWAY, ABILITY_PICKUP, ABILITY_VOLT_ABSORB },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Pachirisu"),
-        .cryId = CRY_NONE,    //PACHIRISU,
+        .cryId = CRY_PACHIRISU,
         .natDexNum = NATIONAL_DEX_PACHIRISU,
         .categoryName = _("EleSquirrel"),
         .height = 4,
@@ -1918,7 +1886,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Pachirisu,
         .iconPalIndex = 0,
         FOOTPRINT(Pachirisu)
-        FOLLOWER(Pachirisu, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sPachirisuLevelUpLearnset,
         .teachableLearnset = sPachirisuTeachableLearnset,
     },
@@ -1945,7 +1912,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Buizel"),
-        .cryId = CRY_NONE,    //BUIZEL,
+        .cryId = CRY_BUIZEL,
         .natDexNum = NATIONAL_DEX_BUIZEL,
         .categoryName = _("Sea Weasel"),
         .height = 7,
@@ -1975,7 +1942,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Buizel,
         .iconPalIndex = 0,
         FOOTPRINT(Buizel)
-        FOLLOWER(Buizel, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBuizelLevelUpLearnset,
         .teachableLearnset = sBuizelTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_FLOATZEL}),
@@ -2001,7 +1967,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Floatzel"),
-        .cryId = CRY_NONE,    //FLOATZEL,
+        .cryId = CRY_FLOATZEL,
         .natDexNum = NATIONAL_DEX_FLOATZEL,
         .categoryName = _("Sea Weasel"),
         .height = 11,
@@ -2031,7 +1997,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Floatzel,
         .iconPalIndex = 0,
         FOOTPRINT(Floatzel)
-        FOLLOWER(Floatzel, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sFloatzelLevelUpLearnset,
         .teachableLearnset = sFloatzelTeachableLearnset,
     },
@@ -2059,7 +2024,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Cherubi"),
-        .cryId = CRY_NONE,    //CHERUBI,
+        .cryId = CRY_CHERUBI,
         .natDexNum = NATIONAL_DEX_CHERUBI,
         .categoryName = _("Cherry"),
         .height = 4,
@@ -2087,7 +2052,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Cherubi,
         .iconPalIndex = 1,
         FOOTPRINT(Cherubi)
-        FOLLOWER(Cherubi, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sCherubiLevelUpLearnset,
         .teachableLearnset = sCherubiTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_CHERRIM_OVERCAST}),
@@ -2114,7 +2078,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_FLOWER_GIFT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Cherrim"),
-        .cryId = CRY_NONE,    //CHERRIM,
+        .cryId = CRY_CHERRIM,
         .natDexNum = NATIONAL_DEX_CHERRIM,
         .categoryName = _("Blossom"),
         .height = 5,
@@ -2142,7 +2106,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_CherrimOvercast,
         .iconPalIndex = 0,
         FOOTPRINT(Cherrim)
-        FOLLOWER(CherrimOvercast, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sCherrimLevelUpLearnset,
         .teachableLearnset = sCherrimTeachableLearnset,
         .formSpeciesIdTable = sCherrimFormSpeciesIdTable,
@@ -2170,7 +2133,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_FLOWER_GIFT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Cherrim"),
-        .cryId = CRY_NONE,    //CHERRIM,
+        .cryId = CRY_CHERRIM,
         .natDexNum = NATIONAL_DEX_CHERRIM,
         .categoryName = _("Blossom"),
         .height = 5,
@@ -2226,7 +2189,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Shellos"),
-        .cryId = CRY_NONE,    //SHELLOS,
+        .cryId = CRY_SHELLOS,
         .natDexNum = NATIONAL_DEX_SHELLOS,
         .categoryName = _("Sea Slug"),
         .height = 3,
@@ -2254,7 +2217,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_ShellosWestSea,
         .iconPalIndex = 0,
         FOOTPRINT(Shellos)
-        FOLLOWER(ShellosWestSea, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sShellosLevelUpLearnset,
         .teachableLearnset = sShellosTeachableLearnset,
         .formSpeciesIdTable = sShellosFormSpeciesIdTable,
@@ -2281,7 +2243,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Shellos"),
-        .cryId = CRY_NONE,    //SHELLOS,
+        .cryId = CRY_SHELLOS,
         .natDexNum = NATIONAL_DEX_SHELLOS,
         .categoryName = _("Sea Slug"),
         .height = 3,
@@ -2309,7 +2271,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_ShellosEastSea,
         .iconPalIndex = 0,
         FOOTPRINT(Shellos)
-        FOLLOWER(ShellosEastSea, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sShellosLevelUpLearnset,
         .teachableLearnset = sShellosTeachableLearnset,
         .formSpeciesIdTable = sShellosFormSpeciesIdTable,
@@ -2336,7 +2297,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Gastrodon"),
-        .cryId = CRY_NONE,    //GASTRODON,
+        .cryId = CRY_GASTRODON,
         .natDexNum = NATIONAL_DEX_GASTRODON,
         .categoryName = _("Sea Slug"),
         .height = 9,
@@ -2364,7 +2325,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_GastrodonWestSea,
         .iconPalIndex = 0,
         FOOTPRINT(Gastrodon)
-        FOLLOWER(GastrodonWestSea, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGastrodonLevelUpLearnset,
         .teachableLearnset = sGastrodonTeachableLearnset,
         .formSpeciesIdTable = sGastrodonFormSpeciesIdTable,
@@ -2390,7 +2350,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Gastrodon"),
-        .cryId = CRY_NONE,    //GASTRODON,
+        .cryId = CRY_GASTRODON,
         .natDexNum = NATIONAL_DEX_GASTRODON,
         .categoryName = _("Sea Slug"),
         .height = 9,
@@ -2418,7 +2378,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_GastrodonEastSea,
         .iconPalIndex = 0,
         FOOTPRINT(Gastrodon)
-        FOLLOWER(GastrodonEastSea, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGastrodonLevelUpLearnset,
         .teachableLearnset = sGastrodonTeachableLearnset,
         .formSpeciesIdTable = sGastrodonFormSpeciesIdTable,
@@ -2446,7 +2405,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Drifloon"),
-        .cryId = CRY_NONE,    //DRIFLOON,
+        .cryId = CRY_DRIFLOON,
         .natDexNum = NATIONAL_DEX_DRIFLOON,
         .categoryName = _("Balloon"),
         .height = 4,
@@ -2475,7 +2434,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Drifloon,
         .iconPalIndex = 2,
         FOOTPRINT(Drifloon)
-        FOLLOWER(Drifloon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sDrifloonLevelUpLearnset,
         .teachableLearnset = sDrifloonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DRIFBLIM}),
@@ -2501,7 +2459,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Drifblim"),
-        .cryId = CRY_NONE,    //DRIFBLIM,
+        .cryId = CRY_DRIFBLIM,
         .natDexNum = NATIONAL_DEX_DRIFBLIM,
         .categoryName = _("Blimp"),
         .height = 12,
@@ -2530,7 +2488,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Drifblim,
         .iconPalIndex = 2,
         FOOTPRINT(Drifblim)
-        FOLLOWER(Drifblim, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sDrifblimLevelUpLearnset,
         .teachableLearnset = sDrifblimTeachableLearnset,
     },
@@ -2557,7 +2514,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_RUN_AWAY, ABILITY_KLUTZ, ABILITY_LIMBER },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Buneary"),
-        .cryId = CRY_NONE,    //BUNEARY,
+        .cryId = CRY_BUNEARY,
         .natDexNum = NATIONAL_DEX_BUNEARY,
         .categoryName = _("Rabbit"),
         .height = 4,
@@ -2585,7 +2542,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Buneary,
         .iconPalIndex = 2,
         FOOTPRINT(Buneary)
-        FOLLOWER(Buneary, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBunearyLevelUpLearnset,
         .teachableLearnset = sBunearyTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_LOPUNNY}),
@@ -2611,7 +2567,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_KLUTZ, ABILITY_LIMBER },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Lopunny"),
-        .cryId = CRY_NONE,    //LOPUNNY,
+        .cryId = CRY_LOPUNNY,
         .natDexNum = NATIONAL_DEX_LOPUNNY,
         .categoryName = _("Rabbit"),
         .height = 12,
@@ -2639,7 +2595,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Lopunny,
         .iconPalIndex = 2,
         FOOTPRINT(Lopunny)
-        FOLLOWER(Lopunny, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sLopunnyLevelUpLearnset,
         .teachableLearnset = sLopunnyTeachableLearnset,
         .formSpeciesIdTable = sLopunnyFormSpeciesIdTable,
@@ -2667,7 +2622,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SCRAPPY, ABILITY_SCRAPPY, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Lopunny"),
-        .cryId = CRY_NONE,    //LOPUNNY_MEGA,
+        .cryId = CRY_LOPUNNY_MEGA,
         .natDexNum = NATIONAL_DEX_LOPUNNY,
         .categoryName = _("Rabbit"),
         .height = 13,
@@ -2725,7 +2680,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LIMBER, ABILITY_OWN_TEMPO, ABILITY_KEEN_EYE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Glameow"),
-        .cryId = CRY_NONE,    //GLAMEOW,
+        .cryId = CRY_GLAMEOW,
         .natDexNum = NATIONAL_DEX_GLAMEOW,
         .categoryName = _("Catty"),
         .height = 5,
@@ -2753,7 +2708,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Glameow,
         .iconPalIndex = 0,
         FOOTPRINT(Glameow)
-        FOLLOWER(Glameow, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGlameowLevelUpLearnset,
         .teachableLearnset = sGlameowTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PURUGLY}),
@@ -2779,7 +2733,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_THICK_FAT, ABILITY_OWN_TEMPO, ABILITY_DEFIANT },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Purugly"),
-        .cryId = CRY_NONE,    //PURUGLY,
+        .cryId = CRY_PURUGLY,
         .natDexNum = NATIONAL_DEX_PURUGLY,
         .categoryName = _("Tiger Cat"),
         .height = 10,
@@ -2807,7 +2761,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Purugly,
         .iconPalIndex = 0,
         FOOTPRINT(Purugly)
-        FOLLOWER(Purugly, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sPuruglyLevelUpLearnset,
         .teachableLearnset = sPuruglyTeachableLearnset,
     },
@@ -2834,7 +2787,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STENCH, ABILITY_AFTERMATH, ABILITY_KEEN_EYE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Stunky"),
-        .cryId = CRY_NONE,    //STUNKY,
+        .cryId = CRY_STUNKY,
         .natDexNum = NATIONAL_DEX_STUNKY,
         .categoryName = _("Skunk"),
         .height = 4,
@@ -2862,7 +2815,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Stunky,
         .iconPalIndex = 2,
         FOOTPRINT(Stunky)
-        FOLLOWER(Stunky, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sStunkyLevelUpLearnset,
         .teachableLearnset = sStunkyTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SKUNTANK}),
@@ -2888,7 +2840,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STENCH, ABILITY_AFTERMATH, ABILITY_KEEN_EYE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Skuntank"),
-        .cryId = CRY_NONE,    //SKUNTANK,
+        .cryId = CRY_SKUNTANK,
         .natDexNum = NATIONAL_DEX_SKUNTANK,
         .categoryName = _("Skunk"),
         .height = 10,
@@ -2916,7 +2868,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Skuntank,
         .iconPalIndex = 2,
         FOOTPRINT(Skuntank)
-        FOLLOWER(Skuntank, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sSkuntankLevelUpLearnset,
         .teachableLearnset = sSkuntankTeachableLearnset,
     },
@@ -2944,7 +2895,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Bronzor"),
-        .cryId = CRY_NONE,    //BRONZOR,
+        .cryId = CRY_BRONZOR,
         .natDexNum = NATIONAL_DEX_BRONZOR,
         .categoryName = _("Bronze"),
         .height = 5,
@@ -2973,7 +2924,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Bronzor,
         .iconPalIndex = 0,
         FOOTPRINT(Bronzor)
-        FOLLOWER(Bronzor, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBronzorLevelUpLearnset,
         .teachableLearnset = sBronzorTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BRONZONG}),
@@ -3001,7 +2951,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Bronzong"),
-        .cryId = CRY_NONE,    //BRONZONG,
+        .cryId = CRY_BRONZONG,
         .natDexNum = NATIONAL_DEX_BRONZONG,
         .categoryName = _("Bronze Bell"),
         .height = 13,
@@ -3030,7 +2980,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Bronzong,
         .iconPalIndex = 0,
         FOOTPRINT(Bronzong)
-        FOLLOWER(Bronzong, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sBronzongLevelUpLearnset,
         .teachableLearnset = sBronzongTeachableLearnset,
     },
@@ -3058,7 +3007,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Chatot"),
-        .cryId = CRY_NONE,    //CHATOT,
+        .cryId = CRY_CHATOT,
         .natDexNum = NATIONAL_DEX_CHATOT,
         .categoryName = _("Music Note"),
         .height = 5,
@@ -3086,7 +3035,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Chatot,
         .iconPalIndex = 0,
         FOOTPRINT(Chatot)
-        FOLLOWER(Chatot, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sChatotLevelUpLearnset,
         .teachableLearnset = sChatotTeachableLearnset,
     },
@@ -3114,7 +3062,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Spiritomb"),
-        .cryId = CRY_NONE,    //SPIRITOMB,
+        .cryId = CRY_SPIRITOMB,
         .natDexNum = NATIONAL_DEX_SPIRITOMB,
         .categoryName = _("Forbidden"),
         .height = 10,
@@ -3142,7 +3090,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Spiritomb,
         .iconPalIndex = 5,
         FOOTPRINT(Spiritomb)
-        FOLLOWER(Spiritomb, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sSpiritombLevelUpLearnset,
         .teachableLearnset = sSpiritombTeachableLearnset,
     },
@@ -3169,7 +3116,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Gible"),
-        .cryId = CRY_NONE,    //GIBLE,
+        .cryId = CRY_GIBLE,
         .natDexNum = NATIONAL_DEX_GIBLE,
         .categoryName = _("Land Shark"),
         .height = 7,
@@ -3201,7 +3148,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Gible,
         .iconPalIndex = 0,
         FOOTPRINT(Gible)
-        FOLLOWER(Gible, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGibleLevelUpLearnset,
         .teachableLearnset = sGibleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_GABITE}),
@@ -3227,7 +3173,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Gabite"),
-        .cryId = CRY_NONE,    //GABITE,
+        .cryId = CRY_GABITE,
         .natDexNum = NATIONAL_DEX_GABITE,
         .categoryName = _("Cave"),
         .height = 14,
@@ -3259,7 +3205,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Gabite,
         .iconPalIndex = 0,
         FOOTPRINT(Gabite)
-        FOLLOWER(Gabite, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGabiteLevelUpLearnset,
         .teachableLearnset = sGabiteTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_GARCHOMP}),
@@ -3291,7 +3236,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Garchomp"),
-        .cryId = CRY_NONE,    //GARCHOMP,
+        .cryId = CRY_GARCHOMP,
         .natDexNum = NATIONAL_DEX_GARCHOMP,
         .categoryName = _("Mach"),
         .height = 19,
@@ -3321,7 +3266,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Garchomp,
         .iconPalIndex = 0,
         FOOTPRINT(Garchomp)
-        FOLLOWER(Garchomp, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sGarchompLevelUpLearnset,
         .teachableLearnset = sGarchompTeachableLearnset,
         .formSpeciesIdTable = sGarchompFormSpeciesIdTable,
@@ -3349,7 +3293,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Garchomp"),
-        .cryId = CRY_NONE,    //GARCHOMP_MEGA,
+        .cryId = CRY_GARCHOMP_MEGA,
         .natDexNum = NATIONAL_DEX_GARCHOMP,
         .categoryName = _("Mach"),
         .height = 19,
@@ -3407,7 +3351,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Riolu"),
-        .cryId = CRY_NONE,    //RIOLU,
+        .cryId = CRY_RIOLU,
         .natDexNum = NATIONAL_DEX_RIOLU,
         .categoryName = _("Emanation"),
         .height = 7,
@@ -3435,7 +3379,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Riolu,
         .iconPalIndex = 2,
         FOOTPRINT(Riolu)
-        FOLLOWER(Riolu, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRioluLevelUpLearnset,
         .teachableLearnset = sRioluTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}),
@@ -3462,7 +3405,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_JUSTIFIED },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Lucario"),
-        .cryId = CRY_NONE,    //LUCARIO,
+        .cryId = CRY_LUCARIO,
         .natDexNum = NATIONAL_DEX_LUCARIO,
         .categoryName = _("Aura"),
         .height = 12,
@@ -3490,7 +3433,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Lucario,
         .iconPalIndex = 2,
         FOOTPRINT(Lucario)
-        FOLLOWER(Lucario, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sLucarioLevelUpLearnset,
         .teachableLearnset = sLucarioTeachableLearnset,
         .formSpeciesIdTable = sLucarioFormSpeciesIdTable,
@@ -3519,7 +3461,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Lucario"),
-        .cryId = CRY_NONE,    //LUCARIO_MEGA,
+        .cryId = CRY_LUCARIO_MEGA,
         .natDexNum = NATIONAL_DEX_LUCARIO,
         .categoryName = _("Aura"),
         .height = 13,
@@ -3577,7 +3519,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Hippopotas"),
-        .cryId = CRY_NONE,    //HIPPOPOTAS,
+        .cryId = CRY_HIPPOPOTAS,
         .natDexNum = NATIONAL_DEX_HIPPOPOTAS,
         .categoryName = _("Hippo"),
         .height = 8,
@@ -3611,7 +3553,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndexFemale = 1,
     #endif
         FOOTPRINT(Hippopotas)
-        FOLLOWER(Hippopotas, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sHippopotasLevelUpLearnset,
         .teachableLearnset = sHippopotasTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_HIPPOWDON}),
@@ -3637,7 +3578,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Hippowdon"),
-        .cryId = CRY_NONE,    //HIPPOWDON,
+        .cryId = CRY_HIPPOWDON,
         .natDexNum = NATIONAL_DEX_HIPPOWDON,
         .categoryName = _("Heavyweight"),
         .height = 20,
@@ -3671,7 +3612,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndexFemale = 1,
     #endif
         FOOTPRINT(Hippowdon)
-        FOLLOWER(Hippowdon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sHippowdonLevelUpLearnset,
         .teachableLearnset = sHippowdonTeachableLearnset,
     },
@@ -3699,7 +3639,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_SNIPER, ABILITY_KEEN_EYE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Skorupi"),
-        .cryId = CRY_NONE,    //SKORUPI,
+        .cryId = CRY_SKORUPI,
         .natDexNum = NATIONAL_DEX_SKORUPI,
         .categoryName = _("Scorpion"),
         .height = 8,
@@ -3727,7 +3667,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Skorupi,
         .iconPalIndex = 0,
         FOOTPRINT(Skorupi)
-        FOLLOWER(Skorupi, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sSkorupiLevelUpLearnset,
         .teachableLearnset = sSkorupiTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DRAPION}),
@@ -3754,7 +3693,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_SNIPER, ABILITY_KEEN_EYE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Drapion"),
-        .cryId = CRY_NONE,    //DRAPION,
+        .cryId = CRY_DRAPION,
         .natDexNum = NATIONAL_DEX_DRAPION,
         .categoryName = _("Ogre Scorp"),
         .height = 13,
@@ -3782,7 +3721,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Drapion,
         .iconPalIndex = 2,
         FOOTPRINT(Drapion)
-        FOLLOWER(Drapion, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sDrapionLevelUpLearnset,
         .teachableLearnset = sDrapionTeachableLearnset,
     },
@@ -3810,7 +3748,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_ANTICIPATION, ABILITY_DRY_SKIN, ABILITY_POISON_TOUCH },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Croagunk"),
-        .cryId = CRY_NONE,    //CROAGUNK,
+        .cryId = CRY_CROAGUNK,
         .natDexNum = NATIONAL_DEX_CROAGUNK,
         .categoryName = _("Toxic Mouth"),
         .height = 7,
@@ -3842,7 +3780,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Croagunk,
         .iconPalIndex = 0,
         FOOTPRINT(Croagunk)
-        FOLLOWER(Croagunk, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sCroagunkLevelUpLearnset,
         .teachableLearnset = sCroagunkTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_TOXICROAK}),
@@ -3869,7 +3806,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_ANTICIPATION, ABILITY_DRY_SKIN, ABILITY_POISON_TOUCH },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Toxicroak"),
-        .cryId = CRY_NONE,    //TOXICROAK,
+        .cryId = CRY_TOXICROAK,
         .natDexNum = NATIONAL_DEX_TOXICROAK,
         .categoryName = _("Toxic Mouth"),
         .height = 13,
@@ -3901,7 +3838,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Toxicroak,
         .iconPalIndex = 0,
         FOOTPRINT(Toxicroak)
-        FOLLOWER(Toxicroak, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sToxicroakLevelUpLearnset,
         .teachableLearnset = sToxicroakTeachableLearnset,
     },
@@ -3928,7 +3864,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Carnivine"),
-        .cryId = CRY_NONE,    //CARNIVINE,
+        .cryId = CRY_CARNIVINE,
         .natDexNum = NATIONAL_DEX_CARNIVINE,
         .categoryName = _("Bug Catcher"),
         .height = 14,
@@ -3957,7 +3893,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Carnivine,
         .iconPalIndex = 1,
         FOOTPRINT(Carnivine)
-        FOLLOWER(Carnivine, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sCarnivineLevelUpLearnset,
         .teachableLearnset = sCarnivineTeachableLearnset,
     },
@@ -3984,7 +3919,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Finneon"),
-        .cryId = CRY_NONE,    //FINNEON,
+        .cryId = CRY_FINNEON,
         .natDexNum = NATIONAL_DEX_FINNEON,
         .categoryName = _("Wing Fish"),
         .height = 4,
@@ -4016,7 +3951,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Finneon,
         .iconPalIndex = 0,
         FOOTPRINT(Finneon)
-        FOLLOWER(Finneon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sFinneonLevelUpLearnset,
         .teachableLearnset = sFinneonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUMINEON}),
@@ -4042,7 +3976,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Lumineon"),
-        .cryId = CRY_NONE,    //LUMINEON,
+        .cryId = CRY_LUMINEON,
         .natDexNum = NATIONAL_DEX_LUMINEON,
         .categoryName = _("Neon"),
         .height = 12,
@@ -4074,7 +4008,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Lumineon,
         .iconPalIndex = 0,
         FOOTPRINT(Lumineon)
-        FOLLOWER(Lumineon, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sLumineonLevelUpLearnset,
         .teachableLearnset = sLumineonTeachableLearnset,
     },
@@ -4102,7 +4035,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SNOW_WARNING, ABILITY_NONE, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Snover"),
-        .cryId = CRY_NONE,    //SNOVER,
+        .cryId = CRY_SNOVER,
         .natDexNum = NATIONAL_DEX_SNOVER,
         .categoryName = _("Frost Tree"),
         .height = 10,
@@ -4134,7 +4067,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Snover,
         .iconPalIndex = 1,
         FOOTPRINT(Snover)
-        FOLLOWER(Snover, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sSnoverLevelUpLearnset,
         .teachableLearnset = sSnoverTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ABOMASNOW}),
@@ -4162,7 +4094,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SNOW_WARNING, ABILITY_NONE, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Abomasnow"),
-        .cryId = CRY_NONE,    //ABOMASNOW,
+        .cryId = CRY_ABOMASNOW,
         .natDexNum = NATIONAL_DEX_ABOMASNOW,
         .categoryName = _("Frost Tree"),
         .height = 22,
@@ -4192,7 +4124,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Abomasnow,
         .iconPalIndex = 1,
         FOOTPRINT(Abomasnow)
-        FOLLOWER(Abomasnow, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sAbomasnowLevelUpLearnset,
         .teachableLearnset = sAbomasnowTeachableLearnset,
         .formSpeciesIdTable = sAbomasnowFormSpeciesIdTable,
@@ -4222,7 +4153,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Abomasnow"),
-        .cryId = CRY_NONE,    //ABOMASNOW_MEGA,
+        .cryId = CRY_ABOMASNOW_MEGA,
         .natDexNum = NATIONAL_DEX_ABOMASNOW,
         .categoryName = _("Frost Tree"),
         .height = 27,
@@ -4281,7 +4212,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Rotom"),
-        .cryId = CRY_NONE,    //ROTOM,
+        .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
         .categoryName = _("Plasma"),
         .height = 3,
@@ -4310,7 +4241,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Rotom,
         .iconPalIndex = 0,
         FOOTPRINT(Rotom)
-        FOLLOWER(Rotom, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRotomLevelUpLearnset,
         .teachableLearnset = sRotomTeachableLearnset,
         .formSpeciesIdTable = sRotomFormSpeciesIdTable,
@@ -4346,7 +4276,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Rotom"),
-        .cryId = CRY_NONE,    //ROTOM,
+        .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
         .categoryName = _("Plasma"),
         .height = 3,
@@ -4375,7 +4305,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_RotomHeat,
         .iconPalIndex = 0,
         FOOTPRINT(Rotom)
-        FOLLOWER(RotomHeat, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRotomLevelUpLearnset,
         .teachableLearnset = sRotomTeachableLearnset,
         .formSpeciesIdTable = sRotomFormSpeciesIdTable,
@@ -4404,7 +4333,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
         .speciesName = _("Rotom"),
-        .cryId = CRY_NONE,    //ROTOM,
+        .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
         .categoryName = _("Plasma"),
         .height = 3,
@@ -4433,7 +4362,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_RotomWash,
         .iconPalIndex = 0,
         FOOTPRINT(Rotom)
-        FOLLOWER(RotomWash, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRotomLevelUpLearnset,
         .teachableLearnset = sRotomTeachableLearnset,
         .formSpeciesIdTable = sRotomFormSpeciesIdTable,
@@ -4461,7 +4389,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Rotom"),
-        .cryId = CRY_NONE,    //ROTOM,
+        .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
         .categoryName = _("Plasma"),
         .height = 3,
@@ -4490,7 +4418,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_RotomFrost,
         .iconPalIndex = 5,
         FOOTPRINT(Rotom)
-        FOLLOWER(RotomFrost, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRotomLevelUpLearnset,
         .teachableLearnset = sRotomTeachableLearnset,
         .formSpeciesIdTable = sRotomFormSpeciesIdTable,
@@ -4518,7 +4445,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Rotom"),
-        .cryId = CRY_NONE,    //ROTOM,
+        .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
         .categoryName = _("Plasma"),
         .height = 3,
@@ -4548,7 +4475,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_RotomFan,
         .iconPalIndex = 0,
         FOOTPRINT(Rotom)
-        FOLLOWER(RotomFan, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRotomLevelUpLearnset,
         .teachableLearnset = sRotomTeachableLearnset,
         .formSpeciesIdTable = sRotomFormSpeciesIdTable,
@@ -4576,7 +4502,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Rotom"),
-        .cryId = CRY_NONE,    //ROTOM,
+        .cryId = CRY_ROTOM,
         .natDexNum = NATIONAL_DEX_ROTOM,
         .categoryName = _("Plasma"),
         .height = 3,
@@ -4605,7 +4531,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_RotomMow,
         .iconPalIndex = 0,
         FOOTPRINT(Rotom)
-        FOLLOWER(RotomMow, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .levelUpLearnset = sRotomLevelUpLearnset,
         .teachableLearnset = sRotomTeachableLearnset,
         .formSpeciesIdTable = sRotomFormSpeciesIdTable,
@@ -4641,7 +4566,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Uxie"),
-        .cryId = CRY_NONE,    //UXIE,
+        .cryId = CRY_UXIE,
         .natDexNum = NATIONAL_DEX_UXIE,
         .categoryName = _("Knowledge"),
         .height = 3,
@@ -4670,7 +4595,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Uxie,
         .iconPalIndex = 0,
         FOOTPRINT(Uxie)
-        FOLLOWER(Uxie, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sUxieLevelUpLearnset,
         .teachableLearnset = sUxieTeachableLearnset,
@@ -4706,7 +4630,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Mesprit"),
-        .cryId = CRY_NONE,    //MESPRIT,
+        .cryId = CRY_MESPRIT,
         .natDexNum = NATIONAL_DEX_MESPRIT,
         .categoryName = _("Emotion"),
         .height = 3,
@@ -4735,7 +4659,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Mesprit,
         .iconPalIndex = 0,
         FOOTPRINT(Mesprit)
-        FOLLOWER(Mesprit, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sMespritLevelUpLearnset,
         .teachableLearnset = sMespritTeachableLearnset,
@@ -4770,7 +4693,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Azelf"),
-        .cryId = CRY_NONE,    //AZELF,
+        .cryId = CRY_AZELF,
         .natDexNum = NATIONAL_DEX_AZELF,
         .categoryName = _("Willpower"),
         .height = 3,
@@ -4799,7 +4722,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Azelf,
         .iconPalIndex = 0,
         FOOTPRINT(Azelf)
-        FOLLOWER(Azelf, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sAzelfLevelUpLearnset,
         .teachableLearnset = sAzelfTeachableLearnset,
@@ -4835,7 +4757,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Dialga"),
-        .cryId = CRY_NONE,    //DIALGA,
+        .cryId = CRY_DIALGA,
         .natDexNum = NATIONAL_DEX_DIALGA,
         .categoryName = _("Temporal"),
         .height = 54,
@@ -4863,7 +4785,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Dialga,
         .iconPalIndex = 2,
         FOOTPRINT(Dialga)
-        FOLLOWER(Dialga, SIZE_64x64, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sDialgaLevelUpLearnset,
         .teachableLearnset = sDialgaTeachableLearnset,
@@ -4891,7 +4812,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Dialga"),
-        .cryId = CRY_NONE,    //DIALGA,
+        .cryId = CRY_DIALGA,
         .natDexNum = NATIONAL_DEX_DIALGA,
         .categoryName = _("Temporal"),
         .height = 70,
@@ -4919,7 +4840,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_DialgaOrigin,
         .iconPalIndex = 0,
         FOOTPRINT(Dialga)
-        FOLLOWER(DialgaOrigin, SIZE_64x64, SHADOW_SIZE_M, TRACKS_NONE)
         .isLegendary = TRUE,
         .levelUpLearnset = sDialgaLevelUpLearnset,
         .teachableLearnset = sDialgaTeachableLearnset,
@@ -4957,7 +4877,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Palkia"),
-        .cryId = CRY_NONE,    //PALKIA,
+        .cryId = CRY_PALKIA,
         .natDexNum = NATIONAL_DEX_PALKIA,
         .categoryName = _("Spatial"),
         .height = 42,
@@ -4985,7 +4905,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Palkia,
         .iconPalIndex = 2,
         FOOTPRINT(Palkia)
-        FOLLOWER(Palkia, SIZE_64x64, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sPalkiaLevelUpLearnset,
         .teachableLearnset = sPalkiaTeachableLearnset,
@@ -5013,7 +4932,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Palkia"),
-        .cryId = CRY_NONE,    //PALKIA,
+        .cryId = CRY_PALKIA,
         .natDexNum = NATIONAL_DEX_PALKIA,
         .categoryName = _("Spatial"),
         .height = 63,
@@ -5041,7 +4960,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_PalkiaOrigin,
         .iconPalIndex = 2,
         FOOTPRINT(Palkia)
-        FOLLOWER(PalkiaOrigin, SIZE_64x64, SHADOW_SIZE_M, TRACKS_NONE)
         .isLegendary = TRUE,
         .levelUpLearnset = sPalkiaLevelUpLearnset,
         .teachableLearnset = sPalkiaTeachableLearnset,
@@ -5077,7 +4995,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Heatran"),
-        .cryId = CRY_NONE,    //HEATRAN,
+        .cryId = CRY_HEATRAN,
         .natDexNum = NATIONAL_DEX_HEATRAN,
         .categoryName = _("Lava Dome"),
         .height = 17,
@@ -5105,7 +5023,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Heatran,
         .iconPalIndex = 0,
         FOOTPRINT(Heatran)
-        FOLLOWER(Heatran, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sHeatranLevelUpLearnset,
         .teachableLearnset = sHeatranTeachableLearnset,
@@ -5139,7 +5056,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_SLOW_START, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Regigigas"),
-        .cryId = CRY_NONE,    //REGIGIGAS,
+        .cryId = CRY_REGIGIGAS,
         .natDexNum = NATIONAL_DEX_REGIGIGAS,
         .categoryName = _("Colossal"),
         .height = 37,
@@ -5167,7 +5084,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Regigigas,
         .iconPalIndex = 0,
         FOOTPRINT(Regigigas)
-        FOLLOWER(Regigigas, SIZE_64x64, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sRegigigasLevelUpLearnset,
         .teachableLearnset = sRegigigasTeachableLearnset,
@@ -5203,7 +5119,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Giratina"),
-        .cryId = CRY_NONE,    //GIRATINA,
+        .cryId = CRY_GIRATINA,
         .natDexNum = NATIONAL_DEX_GIRATINA,
         .categoryName = _("Renegade"),
         .height = 45,
@@ -5230,8 +5146,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_GiratinaAltered,
         .iconSprite = gMonIcon_GiratinaAltered,
         .iconPalIndex = 0,
-        FOOTPRINT(Giratina)
-        FOLLOWER(GiratinaAltered, SIZE_64x64, SHADOW_SIZE_M, TRACKS_FOOT)
+        FOOTPRINT(GiratinaAltered)
         .isLegendary = TRUE,
         .levelUpLearnset = sGiratinaLevelUpLearnset,
         .teachableLearnset = sGiratinaTeachableLearnset,
@@ -5259,7 +5174,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Giratina"),
-        .cryId = CRY_NONE,    //GIRATINA,
+        .cryId = CRY_GIRATINA,
         .natDexNum = NATIONAL_DEX_GIRATINA,
         .categoryName = _("Renegade"),
         .height = 69,
@@ -5287,8 +5202,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_GiratinaOrigin,
         .iconSprite = gMonIcon_GiratinaOrigin,
         .iconPalIndex = 0,
-        FOOTPRINT(Giratina)
-        FOLLOWER(GiratinaOrigin, SIZE_64x64, SHADOW_SIZE_M, TRACKS_FOOT)
+        FOOTPRINT(GiratinaOrigin)
         .isLegendary = TRUE,
         .levelUpLearnset = sGiratinaLevelUpLearnset,
         .teachableLearnset = sGiratinaTeachableLearnset,
@@ -5324,7 +5238,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Cresselia"),
-        .cryId = CRY_NONE,    //CRESSELIA,
+        .cryId = CRY_CRESSELIA,
         .natDexNum = NATIONAL_DEX_CRESSELIA,
         .categoryName = _("Lunar"),
         .height = 15,
@@ -5353,7 +5267,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Cresselia,
         .iconPalIndex = 0,
         FOOTPRINT(Cresselia)
-        FOLLOWER(Cresselia, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isLegendary = TRUE,
         .levelUpLearnset = sCresseliaLevelUpLearnset,
         .teachableLearnset = sCresseliaTeachableLearnset,
@@ -5387,7 +5300,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_HYDRATION, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Phione"),
-        .cryId = CRY_NONE,    //PHIONE,
+        .cryId = CRY_PHIONE,
         .natDexNum = NATIONAL_DEX_PHIONE,
         .categoryName = _("Sea Drifter"),
         .height = 4,
@@ -5416,7 +5329,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Phione,
         .iconPalIndex = 0,
         FOOTPRINT(Phione)
-        FOLLOWER(Phione, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isMythical = TRUE,
         .levelUpLearnset = sPhioneLevelUpLearnset,
         .teachableLearnset = sPhioneTeachableLearnset,
@@ -5448,7 +5360,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_HYDRATION, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Manaphy"),
-        .cryId = CRY_NONE,    //MANAPHY,
+        .cryId = CRY_MANAPHY,
         .natDexNum = NATIONAL_DEX_MANAPHY,
         .categoryName = _("Seafaring"),
         .height = 3,
@@ -5477,7 +5389,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Manaphy,
         .iconPalIndex = 0,
         FOOTPRINT(Manaphy)
-        FOLLOWER(Manaphy, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isMythical = TRUE,
         .levelUpLearnset = sManaphyLevelUpLearnset,
         .teachableLearnset = sManaphyTeachableLearnset,
@@ -5512,7 +5423,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_BAD_DREAMS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Darkrai"),
-        .cryId = CRY_NONE,    //DARKRAI,
+        .cryId = CRY_DARKRAI,
         .natDexNum = NATIONAL_DEX_DARKRAI,
         .categoryName = _("Pitch-Black"),
         .height = 15,
@@ -5541,7 +5452,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_Darkrai,
         .iconPalIndex = 0,
         FOOTPRINT(Darkrai)
-        FOLLOWER(Darkrai, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isMythical = TRUE,
         .levelUpLearnset = sDarkraiLevelUpLearnset,
         .teachableLearnset = sDarkraiTeachableLearnset,
@@ -5579,7 +5489,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Shaymin"),
-        .cryId = CRY_NONE,    //SHAYMIN_LAND,
+        .cryId = CRY_SHAYMIN_LAND,
         .natDexNum = NATIONAL_DEX_SHAYMIN,
         .categoryName = _("Gratitude"),
         .height = 2,
@@ -5607,7 +5517,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconSprite = gMonIcon_ShayminLand,
         .iconPalIndex = 1,
         FOOTPRINT(Shaymin)
-        FOLLOWER(ShayminLand, SIZE_32x32, SHADOW_SIZE_M, TRACKS_FOOT)
         .isMythical = TRUE,
         .levelUpLearnset = sShayminLandLevelUpLearnset,
         .teachableLearnset = sShayminLandTeachableLearnset,
@@ -5642,7 +5551,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Shaymin"),
-        .cryId = CRY_NONE,    //SHAYMIN_SKY,
+        .cryId = CRY_SHAYMIN_SKY,
         .natDexNum = NATIONAL_DEX_SHAYMIN,
         .categoryName = _("Gratitude"),
         .height = 4,
@@ -5687,56 +5596,55 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     #define ARCEUS_EXP_YIELD 255
 #endif
 
-#define ARCEUS_SPECIES_INFO(type, typeName)                                 \
-    {                                                                       \
-        .baseHP        = 120,                                               \
-        .baseAttack    = 120,                                               \
-        .baseDefense   = 120,                                               \
-        .baseSpeed     = 120,                                               \
-        .baseSpAttack  = 120,                                               \
-        .baseSpDefense = 120,                                               \
-        .types = MON_TYPES(type),                                           \
-        .catchRate = 3,                                                     \
-        .expYield = ARCEUS_EXP_YIELD,                                       \
-        .evYield_HP = 3,                                                    \
-        .genderRatio = MON_GENDERLESS,                                      \
-        .eggCycles = 120,                                                   \
-        .friendship = 0,                                                    \
-        .growthRate = GROWTH_SLOW,                                          \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),          \
-        .abilities = { ABILITY_MULTITYPE, ABILITY_NONE, ABILITY_NONE },     \
-        .bodyColor = BODY_COLOR_WHITE,                                      \
-        .speciesName = _("Arceus"),                                         \
-        .cryId = CRY_NONE,                                                  \
-        .natDexNum = NATIONAL_DEX_ARCEUS,                                   \
-        .categoryName = _("Alpha"),                                         \
-        .height = 32,                                                       \
-        .weight = 3200,                                                     \
-        .description = gArceusPokedexText,                                  \
-        .pokemonScale = 256,                                                \
-        .pokemonOffset = 0,                                                 \
-        .trainerScale = 495,                                                \
-        .trainerOffset = 10,                                                \
-        .frontPic = gMonFrontPic_Arceus,                                    \
-        .frontPicSize = MON_COORDS_SIZE(64, 64),                            \
-        .frontPicYOffset = 0,                                               \
-        .frontAnimFrames = sAnims_Arceus,                                   \
-        .frontAnimId = ANIM_GROW_VIBRATE,                                   \
-        .backPic = gMonBackPic_Arceus,                                      \
-        .backPicSize = MON_COORDS_SIZE(64, 64),                             \
-        .backPicYOffset = 3,                                                \
-        .backAnimId = BACK_ANIM_GROW_STUTTER,                               \
-        .palette = gMonPalette_Arceus ##typeName,                           \
-        .shinyPalette = gMonShinyPalette_Arceus ##typeName,                 \
-        .iconSprite = gMonIcon_Arceus,                                      \
-        .iconPalIndex = 1,                                                  \
-        FOOTPRINT(Arceus)                                                   \
-        FOLLOWER(Arceus ##typeName, SIZE_64x64, SHADOW_SIZE_M, TRACKS_FOOT) \
-        .levelUpLearnset = sArceusLevelUpLearnset,                          \
-        .teachableLearnset = sArceusTeachableLearnset,                      \
-        .formSpeciesIdTable = sArceusFormSpeciesIdTable,                    \
-        .formChangeTable = sArceusFormChangeTable,                          \
-        .isMythical = TRUE,                                                 \
+#define ARCEUS_SPECIES_INFO(type, typeName)                             \
+    {                                                                   \
+        .baseHP        = 120,                                           \
+        .baseAttack    = 120,                                           \
+        .baseDefense   = 120,                                           \
+        .baseSpeed     = 120,                                           \
+        .baseSpAttack  = 120,                                           \
+        .baseSpDefense = 120,                                           \
+        .types = MON_TYPES(type),                                       \
+        .catchRate = 3,                                                 \
+        .expYield = ARCEUS_EXP_YIELD,                                   \
+        .evYield_HP = 3,                                                \
+        .genderRatio = MON_GENDERLESS,                                  \
+        .eggCycles = 120,                                               \
+        .friendship = 0,                                                \
+        .growthRate = GROWTH_SLOW,                                      \
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),      \
+        .abilities = { ABILITY_MULTITYPE, ABILITY_NONE, ABILITY_NONE }, \
+        .bodyColor = BODY_COLOR_WHITE,                                  \
+        .speciesName = _("Arceus"),                                     \
+        .cryId = CRY_ARCEUS,                                            \
+        .natDexNum = NATIONAL_DEX_ARCEUS,                               \
+        .categoryName = _("Alpha"),                                     \
+        .height = 32,                                                   \
+        .weight = 3200,                                                 \
+        .description = gArceusPokedexText,                              \
+        .pokemonScale = 256,                                            \
+        .pokemonOffset = 0,                                             \
+        .trainerScale = 495,                                            \
+        .trainerOffset = 10,                                            \
+        .frontPic = gMonFrontPic_Arceus,                                \
+        .frontPicSize = MON_COORDS_SIZE(64, 64),                        \
+        .frontPicYOffset = 0,                                           \
+        .frontAnimFrames = sAnims_Arceus,                               \
+        .frontAnimId = ANIM_GROW_VIBRATE,                               \
+        .backPic = gMonBackPic_Arceus,                                  \
+        .backPicSize = MON_COORDS_SIZE(64, 64),                         \
+        .backPicYOffset = 3,                                            \
+        .backAnimId = BACK_ANIM_GROW_STUTTER,                           \
+        .palette = gMonPalette_Arceus ##typeName,                       \
+        .shinyPalette = gMonShinyPalette_Arceus ##typeName,             \
+        .iconSprite = gMonIcon_Arceus,                                  \
+        .iconPalIndex = 1,                                              \
+        FOOTPRINT(Arceus)                                               \
+        .levelUpLearnset = sArceusLevelUpLearnset,                      \
+        .teachableLearnset = sArceusTeachableLearnset,                  \
+        .formSpeciesIdTable = sArceusFormSpeciesIdTable,                \
+        .formChangeTable = sArceusFormChangeTable,                      \
+        .isMythical = TRUE,                                             \
     }
 
     [SPECIES_ARCEUS_NORMAL]   = ARCEUS_SPECIES_INFO(TYPE_NORMAL,   Normal),
