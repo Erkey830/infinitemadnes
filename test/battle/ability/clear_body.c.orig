@@ -17,7 +17,9 @@ SINGLE_BATTLE_TEST("Clear Body prevents intimidate")
     } SCENE {
         HP_BAR(player, captureDamage: &turnOneHit);
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
-        NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
+        NONE_OF {
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        }
         ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
         MESSAGE("Foe Beldum's Clear Body prevents stat loss!");
         HP_BAR(player, captureDamage: &turnTwoHit);
@@ -37,6 +39,21 @@ TO_DO_BATTLE_TEST("Clear Body doesn't prevent receiving negative stat changes fr
 TO_DO_BATTLE_TEST("Clear Body doesn't prevent Topsy-Turvy");
 TO_DO_BATTLE_TEST("Clear Body doesn't prevent Spectral Thief from resetting positive stat changes");
 TO_DO_BATTLE_TEST("Clear Body is ignored by Mold Breaker");
+
+            ANIMATION(ANIM_TYPE_MOVE, move, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SUPERPOWER, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, move, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, player);
+        NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
+        ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
+        ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_AGILITY, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
+        NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
 =======
 SINGLE_BATTLE_TEST("Clear Body prevents stat stage reduction from moves")
 {
@@ -286,4 +303,4 @@ SINGLE_BATTLE_TEST("Clear Body doesn't prevent Spectral Thief from resetting pos
         MESSAGE("Foe Metang used Celebrate!");
     }
 }
->>>>>>> 02ad637849 (Review feedback)
+>>>>>>> fd08e59e8d (Clear body tests (#4685))
