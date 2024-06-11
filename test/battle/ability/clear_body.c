@@ -36,3 +36,18 @@ TO_DO_BATTLE_TEST("Clear Body doesn't prevent receiving negative stat changes fr
 TO_DO_BATTLE_TEST("Clear Body doesn't prevent Topsy-Turvy");
 TO_DO_BATTLE_TEST("Clear Body doesn't prevent Spectral Thief from resetting positive stat changes");
 TO_DO_BATTLE_TEST("Clear Body is ignored by Mold Breaker");
+
+            ANIMATION(ANIM_TYPE_MOVE, move, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SUPERPOWER, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, move, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, player);
+        NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
+        ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
+        ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_AGILITY, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
+        NOT ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
