@@ -709,7 +709,8 @@
 #define STRINGID_TIDYINGUPCOMPLETE                    707
 #define STRINGID_BOOSTERENERGYACTIVATES               708
 
-#define BATTLESTRINGS_COUNT                           709
+#define STRINGID_DOT                                  709
+#define BATTLESTRINGS_COUNT                           710
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
