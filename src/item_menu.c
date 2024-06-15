@@ -404,7 +404,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .tilemapTop = 2,
         .width = 15,
         .height = 11,
-        .paletteNum = 1,
+        .paletteNum = 0,
         .baseBlock = 0x27,//39
     },
     [WIN_DESCRIPTION] = {
@@ -413,7 +413,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .tilemapTop = 13,
         .width = 26,
         .height = 6,
-        .paletteNum = 1,
+        .paletteNum = 0,
         .baseBlock = 204,//279
     },
     [WIN_POCKET_NAME] = {
@@ -422,7 +422,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .tilemapTop = 1,
         .width = 8,
         .height = 2,
-        .paletteNum = 1,
+        .paletteNum = 0,
         .baseBlock = 378//0x1A1,
     },
     [WIN_TMHM_INFO_ICONS] = {

@@ -18,6 +18,9 @@
 #define BATTLEITEMS_POCKET  3
 #define BERRIES_POCKET      4
 #define TREASURES_POCKET    5
+#define TMHM_POCKET         6
+#define KEYITEMS_POCKET     7
+#define POCKETS_COUNT       8
 
 #define REPEL_LURE_MASK         (1 << 15)
 #define IS_LAST_USED_LURE(var)  (var & REPEL_LURE_MASK)
