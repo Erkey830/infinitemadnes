@@ -1434,10 +1434,17 @@ static void DrawItemListBgRow(u8 y)
 
 static void DrawPocketIndicatorSquare(u8 x, bool8 isCurrentPocket)
 {
+<<<<<<< HEAD
     //if (!isCurrentPocket)
     //    FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 5, 3, 1, 1);
     //else
     //    FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 5, 3, 1, 1);
+=======
+    if (!isCurrentPocket)
+        FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 4, 3, 1, 1);
+    else
+        FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 4, 3, 1, 1);
+>>>>>>> 96925341aba71b75aa6a067d4872551032c0237b
     ScheduleBgCopyTilemapToVram(2);
 }
 

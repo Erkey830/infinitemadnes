@@ -166,14 +166,16 @@
 #define STDSTRING_BATTLE_PIKE      28
 #define STDSTRING_BATTLE_PYRAMID   29
 
+<<<<<<< HEAD
 // Dynamic Multichoice Callbacks
 
 #define DYN_MULTICHOICE_CB_DEBUG      0
 #define DYN_MULTICHOICE_CB_SHOW_ITEM  1
 #define DYN_MULTICHOICE_CB_NONE       255
-
+=======
 #define STDSTRING_MEDICINE         30
 #define STDSTRING_BATTLEITEMS      31
 #define STDSTRING_TREASURES        32
+>>>>>>> 96925341aba71b75aa6a067d4872551032c0237b
 
 #endif //GUARD_SCRIPT_MENU_CONSTANTS_H
