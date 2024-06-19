@@ -371,21 +371,21 @@ static const u8 sStatsNonHPLayout[]                         = _("{DYNAMIC 0}\n{D
 static const u8 sMovesPPLayout[]                            = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 
 #if BW_SUMMARY_DECAP == TRUE
-static const u8 sText_Cancel[]                              = _("Cancel");
-static const u8 sText_Switch[]                              = _("Switch");
-static const u8 sText_PkmnInfo[]                            = _("Pokémon Info");
-static const u8 sText_PkmnSkills[]                          = _("Pokémon Skills");
-static const u8 sText_BattleMoves[]                         = _("Battle Moves");
-static const u8 sText_ContestMoves[]                        = _("Contest Moves");
+static const u8 sText_Cancel[]                              = _("Cancelar");
+static const u8 sText_Switch[]                              = _("Cambiar");
+static const u8 sText_PkmnInfo[]                            = _("Info. Pokémon");
+static const u8 sText_PkmnSkills[]                          = _("Est. Pokémon");
+static const u8 sText_BattleMoves[]                         = _("Ataques");
+static const u8 sText_ContestMoves[]                        = _("Concursos");
 static const u8 sText_Info[]                                = _("Info");
-static const u8 sText_ViewIVs[]                             = _("View IV");
-static const u8 sText_ViewEVs[]                             = _("View EV");
-static const u8 sText_ViewStats[]                           = _("View Stats");
-static const u8 sText_ViewIVs_Graded[]                      = _("See Innate");
-static const u8 sText_ViewEVs_Graded[]                      = _("See Effort");
-static const u8 sText_NextLv[]                              = _("Next Lv.");
-static const u8 sText_RentalPkmn[]                          = _("Rental Pokémon");
-static const u8 sText_None[]                                = _("None");
+static const u8 sText_ViewIVs[]                             = _("Ver IV");
+static const u8 sText_ViewEVs[]                             = _("Ver EV");
+static const u8 sText_ViewStats[]                           = _("Ver Est.");
+static const u8 sText_ViewIVs_Graded[]                      = _("Ver Nat.");
+static const u8 sText_ViewEVs_Graded[]                      = _("Ver Esf.");
+static const u8 sText_NextLv[]                              = _("SIG. Nvl.");
+static const u8 sText_RentalPkmn[]                          = _("Pokémon Alq.");
+static const u8 sText_None[]                                = _("Ninguno");
 #else
 static const u8 sText_Cancel[]                              = _("CANCEL");
 static const u8 sText_Switch[]                              = _("SWITCH");
