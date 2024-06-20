@@ -5538,9 +5538,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 35,
         .weight = 2800,
         .description = COMPOUND_STRING(
-            "This ferocious creature is shrouded in\n"
-            "mystery. It's named after an aquatic\n"
-            "monster mentioned in an old journal."),
+            "Esta criatura feroz está envuelta en\n"
+"misterio. Está nombrada en honor a un\n"
+"monstruo acuático mencionado en un\n"
+"antiguo diario."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5593,9 +5594,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 15,
         .weight = 1250,
         .description = COMPOUND_STRING(
-            "According to the few eyewitness accounts\n"
-            "that exist, it used its shining blades\n"
-            "to julienne large trees and boulders."),
+            "Según los pocos testimonios presenciales\nque existen, usaba sus cuchillas brillantes\npara hacer juliana de grandes árboles y\nrocas."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -6071,10 +6070,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 35,
         .weight = 5900,
         .description = COMPOUND_STRING(
-            "There are scant few reports of\n"
-            "this creature being sighted.\n"
-            "One short video shows it rampaging,\n"
-            "and spouting pillars of flame."),
+            "Hay escasos informes de\n"
+"avistamientos de esta criatura.\n"
+"Un breve vídeo muestra cómo\n"
+"arrasa y emite columnas de llamas."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -6127,10 +6126,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 52,
         .weight = 4800,
         .description = COMPOUND_STRING(
-            "It bears resemblance to a Pokémon\n"
-            "that became a hot topic for a short\n"
-            "while after a paranomal magazine\n"
-            "touted it as Raikou's ancestor."),
+            "Tiene un parecido con un Pokémon que se\n"
+"convirtió en tema candente durante un\n"
+"corto tiempo después de que una revista\n"
+"lo promoviera como ancestro de Raikou."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -6183,9 +6182,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 15,
         .weight = 1625,
         .description = COMPOUND_STRING(
-            "It was named after a mysterious\n"
-            "object recorded in an old book.\n"
-            "Its body seems to be metallic."),
+            "Fue nombrado según un objeto misterioso\n"
+"registrado en un libro antiguo.\n"
+"Su cuerpo parece ser metálico."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 336,
@@ -6238,10 +6237,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 16,
         .weight = 1560,
         .description = COMPOUND_STRING(
-            "It resembles a mysterious object\n"
-            "introduced in a paranormal magazine\n"
-            "as a cutting-edge weapon\n"
-            "shaped like Cobalion."),
+           "Se asemeja a un objeto misterioso\n"
+"presentado en una revista paranormal\n"
+"como un arma de última generación\n"
+"con forma de Cobalion."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
@@ -6293,10 +6292,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 2,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Terapagos protects itself using its\n"
-            "power to transform energy into hard\n"
-            "crystals. This Pokémon is the source\n"
-            "of the Terastal phenomenon."),
+           "Terapagos se protege utilizando su poder\n"
+"para transformar energía en cristales\n"
+"duros. Es la fuente del fenómeno Terastal.\n"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
@@ -6350,10 +6348,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 3,
         .weight = 160,
         .description = COMPOUND_STRING(
-            "The shell is made of crystallized\n"
-            "Terastal energy. When struck by a move,\n"
-            "this shell absorbs the move's energy\n"
-            "and transfers it to Terapagos."),
+            "La concha es energía cristalizada\n"
+"de Terastal. Cuando recibe un ataque,\n"
+"esta concha absorbe la energía del ataque\n"
+"y se la transfiere a Terapagos."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
@@ -6406,10 +6404,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 17,
         .weight = 770,
         .description = COMPOUND_STRING(
-            "An old expedition journal describes the\n"
-            "sight of this Pokémon buried in the,\n"
-            "depths of the earth as resembling a\n"
-            "planet floating in space."),
+            "Un viejo diario de expedición describe la\n"
+"visión de este Pokémon enterrado en las\n"
+"profundidades de la tierra como un\n"
+"planeta flotando en el espacio."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
@@ -6463,10 +6461,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 3,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "It feeds others toxic mochi that\n"
-            "draw out desires and capabilities.\n"
-            "Those who eat the mochi fall under\n"
-            "Pecharunt's control, chained to its will."),
+            "Alimenta a otros con mochis tóxicos que\n"
+"sacan a relucir deseos y capacidades.\n"
+"Quienes comen el mochi caen bajo el control\n"
+"de Pecharunt, encadenados a su voluntad."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
