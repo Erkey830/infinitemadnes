@@ -4760,16 +4760,6 @@
       "secondary_tileset": "gTileset_NationalPark",
       "border_filepath": "data/layouts/NationalPark/border.bin",
       "blockdata_filepath": "data/layouts/NationalPark/map.bin"
-    },
-    {
-      "id": "LAYOUT_GROMENT_CITY",
-      "name": "GromentCity_Layout",
-      "width": 70,
-      "height": 40,
-      "primary_tileset": "gTileset_ZheriGeneral",
-      "secondary_tileset": "gTileset_GromentCity",
-      "border_filepath": "data/layouts/GromentCity/border.bin",
-      "blockdata_filepath": "data/layouts/GromentCity/map.bin"
     }
   ]
 }
