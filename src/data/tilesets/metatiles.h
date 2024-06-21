@@ -264,9 +264,3 @@ const u16 gMetatileAttributes_League[] = INCBIN_U16("data/tilesets/secondary/lea
 
 const u16 gMetatiles_NationalPark[] = INCBIN_U16("data/tilesets/secondary/national_park/metatiles.bin");
 const u16 gMetatileAttributes_NationalPark[] = INCBIN_U16("data/tilesets/secondary/national_park/metatile_attributes.bin");
-
-const u16 gMetatiles_ZheriGeneral[] = INCBIN_U16("data/tilesets/primary/zheri_general/metatiles.bin");
-const u16 gMetatileAttributes_ZheriGeneral[] = INCBIN_U16("data/tilesets/primary/zheri_general/metatile_attributes.bin");
-
-const u16 gMetatiles_GromentCity[] = INCBIN_U16("data/tilesets/secondary/groment_city/metatiles.bin");
-const u16 gMetatileAttributes_GromentCity[] = INCBIN_U16("data/tilesets/secondary/groment_city/metatile_attributes.bin");

@@ -98,7 +98,6 @@
 #define MAP_ROUTE48             (89 | (0 << 8))
 #define MAP_CHAMPION_ROUTE      (90 | (0 << 8))
 #define MAP_NATIONAL_PARK       (91 | (0 << 8))
-#define MAP_GROMENT_CITY        (92 | (0 << 8))
 
 // gMapGroup_TownsAndRoutesJohto
 #define MAP_NEW_BARK_TOWN    (0 | (1 << 8))

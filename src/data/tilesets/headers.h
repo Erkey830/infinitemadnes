@@ -1036,25 +1036,3 @@ const struct Tileset gTileset_NationalPark =
     .metatileAttributes = gMetatileAttributes_NationalPark,
     .callback = NULL,
 };
-
-const struct Tileset gTileset_ZheriGeneral =
-{
-    .isCompressed = TRUE,
-    .isSecondary = FALSE,
-    .tiles = gTilesetTiles_ZheriGeneral,
-    .palettes = gTilesetPalettes_ZheriGeneral,
-    .metatiles = gMetatiles_ZheriGeneral,
-    .metatileAttributes = gMetatileAttributes_ZheriGeneral,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_GromentCity =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_GromentCity,
-    .palettes = gTilesetPalettes_GromentCity,
-    .metatiles = gMetatiles_GromentCity,
-    .metatileAttributes = gMetatileAttributes_GromentCity,
-    .callback = NULL,
-};
