@@ -62,7 +62,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .categoryName = _("Unknown"),
         .height = 0,
         .weight = 0,
-        .description = gFallbackPokedexText,
+        .description = COMPOUND_STRING(
             "Ha sido recientemente descubierto.\nActualmente está bajo investigación.\nNo hay información detallada disponible\nen este momento."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
