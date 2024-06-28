@@ -278,6 +278,7 @@
 #define SE_PIKE_CURTAIN_CLOSE             267 // SE_CURTAIN
 #define SE_PIKE_CURTAIN_OPEN              268 // SE_CURTAIN1
 #define SE_SUDOWOODO_SHAKE                269 // SE_USSOKI
+#define END_SE                      SE_SUDOWOODO_SHAKE
 // Bard SFX
 #define PH_TRAP_BLEND                     271
 #define PH_TRAP_HELD                      272
@@ -339,6 +340,7 @@
 // Ruby & Sapphire Music 
 #define RS_MUSIC_START                    SONGS_START
 
+#define START_MUS                         322
 #define MUS_LITTLEROOT_TEST               322 // MUS_TETSUJI
 #define MUS_GSC_ROUTE38                   323 // MUS_FIELD13
 #define MUS_CAUGHT                        324 // MUS_KACHI22
@@ -398,7 +400,7 @@
 #define MUS_MT_CHIMNEY                    378 // MUS_TOZAN
 #define MUS_ENCOUNTER_FEMALE              379 // MUS_GIRLEYE
 #define MUS_LILYCOVE                      380 // MUS_MINAMO
-#define MUS_ROUTE111                      381 // MUS_ASHROAD
+#define MUS_DESERT                      381 // MUS_ASHROAD
 #define MUS_HELP                          382 // MUS_EVENT0
 #define MUS_UNDERWATER                    383 // MUS_DEEPDEEP
 #define MUS_VICTORY_TRAINER               384 // MUS_KACHI1
