@@ -2548,7 +2548,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     #else
         .name = _("SuprswtSyrup"),
     #endif
-        .description = COMPOUND_STRING("Baja la veloc. rival."),
+        .description = COMPOUND_STRING("Baja la evasion rival."),
         .aiRating = 5,
     },
 
