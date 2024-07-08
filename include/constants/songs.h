@@ -333,7 +333,7 @@
 #define PH_NURSE_SOLO                     321
 
 #define SOUND_EFFECTS_END                 PH_NURSE_SOLO
-#define MUS_GSC_ROUTE38             351 // MUS_FIELD13          // Unused, likely a test track.
+//#define MUS_GSC_ROUTE38             351 // MUS_FIELD13          // Unused, likely a test track.
 #define END_MUS                     MUS_RG_TEACHY_TV_MENU
 
 #define SONGS_START                       (SOUND_EFFECTS_END + 1)
