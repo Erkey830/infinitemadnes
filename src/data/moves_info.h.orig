@@ -14996,11 +14996,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_FLORAL_HEALING] =
     {
-<<<<<<< HEAD
         .name = HANDLE_EXPANDED_MOVE_NAME("Cura Floral"),
-=======
-        .name = HANDLE_EXPANDED_MOVE_NAME("FloralHealng", "Floral Healing"),
->>>>>>> 8ac739ea1a ([Update moves_info.h] wrong move names (#4854))
         .description = COMPOUND_STRING(
             "Restaura PS del objetivo.\n"
     "Más efectivo sobre hierba."),
@@ -17661,11 +17657,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_JUNGLE_HEALING] =
     {
-<<<<<<< HEAD
         .name = HANDLE_EXPANDED_MOVE_NAME("Cura Selvátic"),
-=======
-        .name = HANDLE_EXPANDED_MOVE_NAME("JungleHealng", "Jungle Healing"),
->>>>>>> 8ac739ea1a ([Update moves_info.h] wrong move names (#4854))
         .description = COMPOUND_STRING(
             "Restaura PS y estados de sí\n"
     "mismo y de los aliados."),
@@ -18206,7 +18198,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = HANDLE_EXPANDED_MOVE_NAME("Rencor Reprimido"),
         .description = COMPOUND_STRING(
+<<<<<<< HEAD
             "Un resentimiento\nhorrible. Puede\nreducir el \nataque del enemigo."),
+=======
+            "A spine-chilling resentment.\n"
+            "Lowers the foe's Attack."),
+>>>>>>> e1a6876600 (Bitter Malice description fix (#4933))
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 75 : 60,
         .type = TYPE_GHOST,
@@ -20079,11 +20076,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     },
     [MOVE_OCEANIC_OPERETTA] =
     {
-<<<<<<< HEAD
         .name = COMPOUND_STRING("Sinfonía Diva Marina"),
-=======
-        .name = COMPOUND_STRING("Oceanic Operetta"),
->>>>>>> 8ac739ea1a ([Update moves_info.h] wrong move names (#4854))
         .description = sNullDescription,
         .effect = EFFECT_HIT,
         .power = 195,
