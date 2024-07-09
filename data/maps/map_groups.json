@@ -96,7 +96,7 @@
     "Underwater_Route105",
     "Underwater_Route125"
   ],
-  "gMapGroup_TownsAndRoutesJohto":[
+  "gMapGroup_TownsAndRoutesJohto": [
     "NewBarkTown",
     "Route29",
     "CherrygroveCity",
@@ -133,8 +133,7 @@
     "ChampionRoute",
     "NationalPark"
   ],
-
-  "gMapGroup_TownsAndRoutesZheri":[
+  "gMapGroup_TownsAndRoutesZheri": [
 
   ],
   "gMapGroup_IndoorLittleroot": [
