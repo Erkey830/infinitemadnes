@@ -670,6 +670,49 @@
 #define STRINGID_CURRENTMOVECANTSELECT                668
 #define STRINGID_TARGETISBEINGSALTCURED               669
 #define STRINGID_TARGETISHURTBYSALTCURE               670
+<<<<<<< HEAD
+#define STRINGID_OPPORTUNISTCOPIED                    671
+#define STRINGID_TARGETCOVEREDINSTICKYCANDYSYRUP      672
+#define STRINGID_SHARPSTEELFLOATS                     673
+#define STRINGID_SHARPSTEELDMG                        674
+#define STRINGID_PKMNBLEWAWAYSHARPSTEEL               675
+#define STRINGID_SHARPSTEELDISAPPEAREDFROMTEAM        676
+#define STRINGID_TEAMTRAPPEDWITHVINES                 677
+#define STRINGID_PKMNHURTBYVINES                      678
+#define STRINGID_TEAMCAUGHTINVORTEX                   679
+#define STRINGID_PKMNHURTBYVORTEX                     680
+#define STRINGID_TEAMSURROUNDEDBYFIRE                 681
+#define STRINGID_PKMNBURNINGUP                        682
+#define STRINGID_TEAMSURROUNDEDBYROCKS                683
+#define STRINGID_PKMNHURTBYROCKSTHROWN                684
+#define STRINGID_MOVEBLOCKEDBYDYNAMAX                 685
+#define STRINGID_ZEROTOHEROTRANSFORMATION             686
+#define STRINGID_THETWOMOVESBECOMEONE                 687
+#define STRINGID_ARAINBOWAPPEAREDONSIDE               688
+#define STRINGID_THERAINBOWDISAPPEARED                689
+#define STRINGID_WAITINGFORPARTNERSMOVE               690
+#define STRINGID_SEAOFFIREENVELOPEDSIDE               691
+#define STRINGID_HURTBYTHESEAOFFIRE                   692
+#define STRINGID_THESEAOFFIREDISAPPEARED              693
+#define STRINGID_SWAMPENVELOPEDSIDE                   694
+#define STRINGID_THESWAMPDISAPPEARED                  695
+#define STRINGID_PKMNTELLCHILLINGRECEPTIONJOKE        696
+#define STRINGID_HOSPITALITYRESTORATION               697
+#define STRINGID_ELECTROSHOTCHARGING                  698
+#define STRINGID_ITEMWASUSEDUP                        699
+#define STRINGID_ATTACKERLOSTITSTYPE                  700
+#define STRINGID_SHEDITSTAIL                          701
+#define STRINGID_CLOAKEDINAHARSHLIGHT                 702
+#define STRINGID_SUPERSWEETAROMAWAFTS                 703
+#define STRINGID_DIMENSIONSWERETWISTED                704
+#define STRINGID_BIZARREARENACREATED                  705
+#define STRINGID_BIZARREAREACREATED                   706
+#define STRINGID_TIDYINGUPCOMPLETE                    707
+#define STRINGID_BOOSTERENERGYACTIVATES               708
+
+#define STRINGID_DOT                                  709
+#define BATTLESTRINGS_COUNT                           710
+=======
 #define STRINGID_TARGETCOVEREDINSTICKYCANDYSYRUP      671
 #define STRINGID_SHARPSTEELFLOATS                     672
 #define STRINGID_SHARPSTEELDMG                        673
@@ -706,10 +749,9 @@
 #define STRINGID_BIZARREARENACREATED                  704
 #define STRINGID_BIZARREAREACREATED                   705
 #define STRINGID_TIDYINGUPCOMPLETE                    706
-#define STRINGID_BOOSTERENERGYACTIVATES               708
 
-#define STRINGID_DOT                                  709
-#define BATTLESTRINGS_COUNT                           710
+#define BATTLESTRINGS_COUNT                           707
+>>>>>>> 552e2768da (Fixes to Opportunist and Mirror Herb adjustments (#4928))
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
