@@ -880,12 +880,17 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SNOW_WARNING] =
     {
+<<<<<<< HEAD
         .name = _("Nevada"),
+        .description = COMPOUND_STRING("Invoca Granizo al entrar."),
+=======
+        .name = _("Snow Warning"),
     #if B_SNOW_WARNING >= GEN_9
         .description = COMPOUND_STRING("Summons snow in battle."),
     #else
         .description = COMPOUND_STRING("Summons hail in battle."),
     #endif
+>>>>>>> 0bcd6a5435 (Make Snow Warning description respect config (#5018))
         .aiRating = 8,
     },
 
