@@ -150,6 +150,7 @@
 	.include "src/trainer_hill.o"
 	.include "src/rayquaza_scene.o"
 <<<<<<< HEAD
+	.include "src/sound_check_menu.o"
 	.include "src/ui_startmenu_full.o"
 	.include "src/debug.o"
 	.include "src/battle_controller_player.o"
@@ -158,5 +159,5 @@
 	.include "src/day_night.o"
 	.include "src/ui_birch_case.o"
 =======
-	.include "src/sound_check_menu.o"
->>>>>>> 67986a696b3d35923f9fe2de3602910dac486572
+	.include "src/ui_main_menu.o"
+>>>>>>> 43826b0329cf53af489744b959228518c5372766
