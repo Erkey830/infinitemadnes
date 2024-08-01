@@ -359,11 +359,14 @@ SECTIONS {
         src/international_string_util.o(.text);
 <<<<<<< HEAD
         src/sound_check_menu.o(.text);
+        src/ui_main_menu.o(.text);
     } =0
 =======
-        src/ui_main_menu.o(.text);
+        src/pokemon_debug.o(.text);
+        src/expansion_intro.o(.text);
+        src/new_shop.o(.text);
     } > ROM =0
->>>>>>> 43826b0329cf53af489744b959228518c5372766
+>>>>>>> 4f7f0e6826ebe5ebc745aada5ba80c1762d616ba
 
     script_data :
     ALIGN(4)
@@ -731,11 +734,14 @@ SECTIONS {
         data/sound_data.o(.rodata);
 <<<<<<< HEAD
         src/sound_check_menu.o(.rodata);
+        src/ui_main_menu.o(.rodata);
     } =0
 =======
-        src/ui_main_menu.o(.rodata);
+        src/pokemon_debug.o(.rodata);
+        src/expansion_intro.o(.rodata);
+        src/new_shop.o(.rodata);
     } > ROM =0
->>>>>>> 43826b0329cf53af489744b959228518c5372766
+>>>>>>> 4f7f0e6826ebe5ebc745aada5ba80c1762d616ba
 
     song_data :
     ALIGN(4)

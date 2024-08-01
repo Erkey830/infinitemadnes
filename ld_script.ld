@@ -359,6 +359,7 @@ SECTIONS {
         src/international_string_util.o(.text);
         src/sound_check_menu.o(.text);
         src/ui_main_menu.o(.text);
+        src/new_shop.o(.text);
     } =0
 
     script_data :
@@ -727,6 +728,7 @@ SECTIONS {
         data/sound_data.o(.rodata);
         src/sound_check_menu.o(.rodata);
         src/ui_main_menu.o(.rodata);
+        src/new_shop.o(.rodata);
     } =0
 
     song_data :
