@@ -145,7 +145,7 @@ static u8 Fishing_EndNoMon(struct Task *);
 static void AlignFishingAnimationFrames(void);
 
 static u8 TrySpinPlayerForWarp(struct ObjectEvent *, s16 *);
-static void PlayerGoSlow(u8 direction);
+//static void PlayerGoSlow(u8 direction);
 
 // .rodata
 
@@ -657,7 +657,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
         if (FlagGet(FLAG_SYS_DEXNAV_SEARCH) && (heldKeys & A_BUTTON))
         {
             gPlayerAvatar.creeping = TRUE;
-            PlayerGoSlow(direction);
+            PlayerRunSlow;
         }
         else
         {
@@ -681,7 +681,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
     else if (FlagGet(FLAG_SYS_DEXNAV_SEARCH) && (heldKeys & A_BUTTON))
     {
         gPlayerAvatar.creeping = TRUE;
-        PlayerGoSlow(direction);
+        PlayerRunSlow;
     }
     else
     {
