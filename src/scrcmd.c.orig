@@ -1011,12 +1011,16 @@ bool8 ScrCmd_applymovement(struct ScriptContext *ctx)
     const void *movementScript = (const void *)ScriptReadWord(ctx);
     struct ObjectEvent *objEvent;
 
+<<<<<<< HEAD
     // When applying script movements to follower, it may have frozen animation that must be cleared
     if (localId == OBJ_EVENT_ID_FOLLOWER && (objEvent = GetFollowerObject()) && objEvent->frozen)
     {
         ClearObjectEventMovement(objEvent, &gSprites[objEvent->spriteId]);
         gSprites[objEvent->spriteId].animCmdIndex = 0; // Needed to set start frame of animation
     }
+=======
+    gObjectEvents[GetObjectEventIdByLocalId(localId)].directionOverwrite = DIR_NONE;
+>>>>>>> 45da91e773d941693d29d0cfa41e6f41d3b4dcc8
     ScriptMovement_StartObjectMovementScript(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, movementScript);
     sMovingNpcId = localId;
     // Force follower into pokeball

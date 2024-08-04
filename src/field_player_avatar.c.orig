@@ -651,7 +651,10 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
         }
     }
     
+<<<<<<< HEAD
     gPlayerAvatar.creeping = FALSE;
+=======
+>>>>>>> 45da91e773d941693d29d0cfa41e6f41d3b4dcc8
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
     {
         if (FlagGet(FLAG_SYS_DEXNAV_SEARCH) && (heldKeys & A_BUTTON))
@@ -1016,6 +1019,13 @@ void PlayerSetAnimId(u8 movementActionId, u8 copyableMovement)
 }
 
 // slow
+<<<<<<< HEAD
+static void PlayerGoSlow(u8 direction)
+{
+    PlayerSetAnimId(GetWalkSlowMovementAction(direction), 2);
+}
+
+=======
 static void PlayerWalkSlow(u8 direction)
 {
     PlayerSetAnimId(GetWalkSlowMovementAction(direction), 2);
@@ -1026,6 +1036,7 @@ static void PlayerRunSlow(u8 direction)
 }
 
 // normal speed (1 speed)
+>>>>>>> 45da91e773d941693d29d0cfa41e6f41d3b4dcc8
 void PlayerWalkNormal(u8 direction)
 {
     PlayerSetAnimId(GetWalkNormalMovementAction(direction), COPY_MOVE_WALK);
